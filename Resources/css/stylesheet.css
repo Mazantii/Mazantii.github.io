@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+wholepage{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+wholepage > overskrift{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 200, 0);
+
+    height: 40vh;
+}
+wholepage > indhold{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 700vh;
+    color: peachpuff;
+
+}
+wholepage > bund{
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    height: 10vh;
+}
