@@ -18,7 +18,10 @@ wholepage > overskrift{
     display: flex;
     justify-content: center;
     background-color: rgb(249, 202, 35);
-
+    background-image: url(https://media1.giphy.com/media/QjSoXOQIcEXBu/200.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15%;
     height: 40vh;
 }
 wholepage > indhold{
