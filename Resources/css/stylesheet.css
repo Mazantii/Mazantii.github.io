@@ -24,14 +24,14 @@ wholepage > overskrift{
 wholepage > indhold{
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: rgb(38, 38, 38);
     height: 700vh;
-    color: peachpuff;
+    color: rgb(255, 226, 240);
 
 }
 wholepage > bund{
     display: flex;
     justify-content: center;
-    background-color: green;
+    background-color: rgb(90, 156, 90);
     height: 10vh;
 }
