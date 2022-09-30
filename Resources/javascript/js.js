@@ -1,17 +1,17 @@
 
-var bridge = document.getElementById("bridge"),
-    bridgeCanvas = bridge.getContext('2d'),
-    brushRadius = (bridge.width / 100) * 5,
+var card = document.getElementById("scratch"),
+    cardCanvas = card.getContext('2d'),
+    brushRadius = (card.width / 100),
     img = new Image();
 
-if (brushRadius < 50) { brushRadius = 50 }
+if (brushRadius < 1) { brushRadius = 1 }
 
 img.onload = function(){  
-  bridgeCanvas.drawImage(img, 0, 0, bridge.width, bridge.height);
+    cardCanvas.drawImage(img, 0, 0, card.width, card.height);
 }
 
-img.loc = 'https://media.gettyimages.com/photos/';
-img.filename = 'roulette-wheel-picture-id185091203?k=20&m=185091203&s=612x612&w=0&h=MuSmxqJUFhc38ScGA_MzjITdLbWOMFdKFEVdnaIuSJY=';
+img.loc = 'https://www.palottery.state.pa.us/uploadedimages/';
+img.filename = 'Tripply_Million_CV.jpg';
 
 if (window.devicePixelRatio >= 2) {
   var nameParts = img.filename.split('.');
@@ -31,22 +31,22 @@ function detectLeftButton(event) {
 }
 
 function getBrushPos(xRef, yRef) {
-  var bridgeRect = bridge.getBoundingClientRect();
+  var cardRect = card.getBoundingClientRect();
     return {
-    x: Math.floor((xRef-bridgeRect.left)/(bridgeRect.right-bridgeRect.left)*bridge.width),
-    y: Math.floor((yRef-bridgeRect.top)/(bridgeRect.bottom-bridgeRect.top)*bridge.height)
+    x: Math.floor((xRef-cardRect.left)/(cardRect.right-cardRect.left)*card.width),
+    y: Math.floor((yRef-cardRect.top)/(cardRect.bottom-cardRect.top)*card.height)
     };
 }
       
 function drawDot(mouseX,mouseY){
-  bridgeCanvas.beginPath();
-    bridgeCanvas.arc(mouseX, mouseY, brushRadius, 0, 2*Math.PI, true);
-    bridgeCanvas.fillStyle = '#000';
-    bridgeCanvas.globalCompositeOperation = "destination-out";
-    bridgeCanvas.fill();
+    cardCanvas.beginPath();
+    cardCanvas.arc(mouseX, mouseY, brushRadius, 0, 2*Math.PI, true);
+    cardCanvas.fillStyle = '#000';
+    cardCanvas.globalCompositeOperation = "destination-out";
+    cardCanvas.fill();
 }
 
-bridge.addEventListener("mousemove", function(e) {
+card.addEventListener("mousemove", function(e) {
   var brushPos = getBrushPos(e.clientX, e.clientY);
   var leftBut = detectLeftButton(e);
   if (leftBut == 1) {
@@ -54,7 +54,7 @@ bridge.addEventListener("mousemove", function(e) {
   }
 }, false);
 
-bridge.addEventListener("touchmove", function(e) {
+card.addEventListener("touchmove", function(e) {
     e.preventDefault();
     var touch = e.targetTouches[0];
     if (touch) {

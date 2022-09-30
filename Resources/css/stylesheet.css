@@ -10,6 +10,7 @@ body{
 wholepage{
     display: flex;
     flex: 1;
+    flex-flow: column wrap;
     flex-direction: column;
     justify-content: center;
 }
@@ -25,7 +26,7 @@ wholepage > overskrift{
 
 wholepage > indhold{
     display: flex;
-    flex-flow: column wrap;
+    
     flex-direction: column;
     align-items: center;
 
@@ -36,27 +37,27 @@ wholepage > indhold{
 
 wholepage > bund{
     display: flex;
+    align-items: center;
     justify-content: center;
     background-color: rgb(90, 156, 90);
     height: 10vh;
 }
 
-#bridge {
-	display: block;
-	margin: 0 auto;
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943.jpg');
-	background-image: -webkit-image-set(url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943.jpg') 1x, url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943-2x.jpg') 2x );
-	background-size: cover;
-	width: 100%;
-	max-width: 750px;
-	height: auto;
-  cursor:  crosshair;
-  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;
+#scratch {
+	display: flex;
+	
+    background-image: url('https://www.palottery.state.pa.us/uploadedimages/Tripply_Million_UC.jpg');
+	background-size: 100%;
+    height: 157vh;
+	width: 70vh;
+    cursor: crosshair;
+    cursor: url('http://jennamolby.com/scratch-and-win/images/coin1.png') 15 15, crosshair;
 }
-#bridgeContainer { 
+#cardContainer { 
   text-align: center;
-  font-family: Avenir, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: xx-large;
 }
-#bridgeContainer figcaption {   
+#cardContainer figcaption {   
   margin-top: 2rem; 
 }
