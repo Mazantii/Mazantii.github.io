@@ -19,6 +19,12 @@ wholepage > overskrift{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(249, 202, 35);
+    background-image: url(https://media1.giphy.com/media/QjSoXOQIcEXBu/200.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15%;
+    height: 40vh;
 
     background-color: rgb(249, 202, 35);
     height: 20vh;
