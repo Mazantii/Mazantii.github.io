@@ -35,3 +35,15 @@ wholepage > bund{
     background-color: rgb(90, 156, 90);
     height: 10vh;
 }
+/*ID'S*/
+#progress-bar {
+    /*CSS property*/
+    --scrollAmount: 0%;
+
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    width: var(--scrollAmount);
+    height: 10px;
+    position: fixed;
+    top: 0;
+
+}
