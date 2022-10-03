@@ -60,7 +60,8 @@ wholepage > bund{
 }
 #cardContainer figcaption {   
   margin-top: 2rem; 
-=======
+}
+
 /*ID'S*/
 #progress-bar {
     /*CSS property*/
@@ -71,6 +72,4 @@ wholepage > bund{
     height: 10px;
     position: fixed;
     top: 0;
-
-
 }
