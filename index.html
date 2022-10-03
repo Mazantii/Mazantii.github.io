@@ -26,6 +26,49 @@
             <figcaption>SKRAB OG VIND</figcaption>
             </figure>
 
+            
+            <table class = "content-table">
+                <form id = "quiz" name = "quiz1">
+                <thead id = "headerDetailQuiz">
+                    <tr>
+                        <th>Nr.</th>
+                        <th>Kampe</th>
+                        <th>Ja</th>
+                        <th>Nej</th>
+                    </tr>
+                </thead>  
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Manchester U vs Fullham</td>
+                        <td><input type = "radio" id = "mc" name = "question1" value = "1"></td>
+                        <td><input type = "radio" id = "mc" name = "question1" value = "2"></td>
+                    </tr>
+                    <tr class="hverAnden">
+                        <td>2</td>
+                        <td>FCBiksekage vs igtja</td>
+                        <td><input type = "radio" id = "mc" name = "question2" value = "1"></td>
+                        <td><input type = "radio" id = "mc" name = "question2" value = "2"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>AaB vs HB Køge</td>
+                        <td><input type = "radio" id = "mc" name = "question3" value = "1"><br></td>
+                        <td><input type = "radio" id = "mc" name = "question3" value = "2"><br></td>
+             
+                    </tr>
+                </tbody>
+                </form>
+            </table>
+                
+            <input id = "button" type = "button" value = "Done!" onclick = "check();">
+            
+            <div id = "after_submit">
+            <p id = "number_correct"></p>
+            <p id = "message"></p>
+            <img id = "picture">
+            </div>
+
         </indhold>
         <bund>
             <p>Created by: Albert A. Beck, Joakim O.K. Mazanti, Jonas F. Petersen & Stine Galsgaard <br> Written by: Emil Østedgaard</p>

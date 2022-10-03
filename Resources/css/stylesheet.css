@@ -79,3 +79,25 @@ wholepage > bund{
     position: fixed;
     top: 0;
 }
+/*Quiz*/
+.content-table {
+    color: black;
+    display: inline-block;
+    font-size: 14px;
+    height: auto;
+    line-height: 38px;
+    max-width:600px;
+    text-shadow: #0e3058;
+    background-color: floralwhite;
+    border-spacing: 0;
+    
+}    
+#headerDetailQuiz {
+    background-color: lightgreen;
+    border-top: 1px solid #008754;
+    border-bottom: 1px solid #00603c;
+    box-shadow: 1px 2px 2px rgb(0 0 0 / 20%);
+}
+.hverAnden {
+    background-color: darkgray;
+}

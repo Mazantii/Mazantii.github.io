@@ -83,3 +83,45 @@ let processScroll = () => {
 //Laver et event der lytter efter 'scroll', og køre funktionen processScroll hvis det sker.
 document.addEventListener('scroll', processScroll);
 
+//Quiz Funktion
+function check(){
+
+	var question1 = document.quiz1.question1.value;
+	var question2 = document.quiz1.question2.value;
+	var question3 = document.quiz1.question3.value;
+	var correct = 0;
+
+
+	if (question1 == "2") {
+		correct++;
+}
+	if (question2 == "2") {
+		correct++;
+}	
+	if (question3 == "1") {
+		correct++;
+	}
+	
+	var pictures = ["img/Kattypinggiphy.gif", "img/Yes.png", "img/Wrong.png"];
+	var messages = ["Great job!", "That's just okay", "You really need to do better"];
+	var score;
+
+	if (correct == 0) {
+		score = 2;
+	}
+
+	if (correct > 0 && correct < 3) {
+		score = 1;
+	}
+
+	if (correct == 3) {
+		score = 0;
+	}
+
+	document.getElementById("after_submit").style.visibility = "visible";
+
+	document.getElementById("message").innerHTML = messages[score];
+        //Bare for at test hvor mange vi får korrekt
+	document.getElementById("number_correct").innerHTML = "You got " + correct + " rgdgffdg.";
+	document.getElementById("picture").src = pictures[score];
+	}
