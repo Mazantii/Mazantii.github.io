@@ -8,6 +8,16 @@ body{
     margin: 0;
 }
 
+p{
+    justify-content: center;
+    width: 50vw;
+}
+
+iframe{
+    width: 100%;
+    height: 100vh;
+}
+
 wholepage{
     display: flex;
     flex: 1;
@@ -20,6 +30,12 @@ wholepage > overskrift{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(249, 202, 35);
+    background-image: url(https://media1.giphy.com/media/QjSoXOQIcEXBu/200.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15%;
+    height: 40vh;
 
     background-color: rgb(79, 193, 25);
     height: auto;
@@ -52,7 +68,7 @@ wholepage > indhold{
     flex-direction: column;
     align-items: center;
 
-    background-color: rgb(38, 38, 38);
+    background-color:#00603c;
     height: 700vh;
     color: rgb(255, 226, 240);
 }
@@ -82,7 +98,8 @@ wholepage > bund{
 }
 #cardContainer figcaption {   
   margin-top: 2rem; 
-=======
+}
+
 /*ID'S*/
 #progress-bar {
     /*CSS property*/
@@ -93,6 +110,27 @@ wholepage > bund{
     height: 10px;
     position: fixed;
     top: 0;
-
-
+}
+/*Quiz*/
+.content-table {
+    color: black;
+    display: inline-block;
+    font-size: 14px;
+    height: auto;
+    line-height: 38px;;
+    text-shadow: #0e3058;
+    background-color: floralwhite;
+    border-spacing: 0;
+    justify-content: center;
+    align-items: center;
+    
+}    
+#headerDetailQuiz {
+    background-color: lightgreen;
+    border-top: 1px solid #008754;
+    border-bottom: 1px solid #00603c;
+    box-shadow: 1px 2px 2px rgb(0 0 0 / 20%);
+}
+.hverAnden {
+    background-color: darkgray;
 }
