@@ -102,7 +102,7 @@ function check(){
 		correct++;
 	}
 	
-	var pictures = ["img/Kattypinggiphy.gif", "img/Yes.png", "img/Wrong.png"];
+	var pictures = ["img/RouletteSecond_1.gif", "img/RouletteSecond_2.gif", "img/Wrong.png"];
 	var messages = ["Great job!", "That's just okay", "You really need to do better"];
 	var score;
 
