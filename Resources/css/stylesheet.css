@@ -39,6 +39,7 @@ wholepage > overskrift{
     height: auto;
 }
 
+
 h1 {
     background-image: url("/giphy.gif");
     background-size: cover;
@@ -122,7 +123,9 @@ wholepage > bund{
 .hverAnden {
     background-color: darkgray;
 }
-#picture{
-    clip-path: inset(36% 37% 39% 42.4%);
-    border: 5px solid black;
+
+#rightAnswer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

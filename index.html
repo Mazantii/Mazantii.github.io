@@ -61,8 +61,6 @@
                 <br><br>
                 - Tidligere var det sådan, at de (gambling og computerspil, red.) var skarpt adskilte. Men det begynder mere og mere at flyde sammen, og i det krydsfelt – der bliver større og større – er der penge involveret. Og det er uheldigt, for børn og unge under 18 år må ikke gamble, fortæller Michael Bay Jørsel.
             </p>
-
-            
             <table class = "content-table">
                 <form id = "quiz" name = "quiz1">
                 <thead id = "headerDetailQuiz">
@@ -71,6 +69,7 @@
                         <th>Kampe</th>
                         <th>Ja</th>
                         <th>Nej</th>
+                        <th></th>
                     </tr>
                 </thead>  
                 <tbody>
@@ -79,19 +78,21 @@
                         <td>Manchester U vs Fullham</td>
                         <td><input type = "radio" id = "mc" name = "question1" value = "1"></td>
                         <td><input type = "radio" id = "mc" name = "question1" value = "2"></td>
+                        <td><img id = "quizBillede1"></td>
                     </tr>
                     <tr class="hverAnden">
                         <td>2</td>
                         <td>FCBiksekage vs igtja</td>
                         <td><input type = "radio" id = "mc" name = "question2" value = "1"></td>
                         <td><input type = "radio" id = "mc" name = "question2" value = "2"></td>
+                        <td><img id = "quizBillede2"></td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>AaB vs HB Køge</td>
                         <td><input type = "radio" id = "mc" name = "question3" value = "1"><br></td>
                         <td><input type = "radio" id = "mc" name = "question3" value = "2"><br></td>
-             
+                        <td><img id = "quizBillede3"></td>
                     </tr>
                 </tbody>
                 </form>
@@ -99,14 +100,13 @@
                 
             <input id = "button" type = "button" value = "Done!" onclick = "check();">
             
+
             <div id = "after_submit">
             <p id = "number_correct"></p>
             <p id = "message"></p>
-            <img id = "picture">
             </div>
 
             <img src="/img/Yes.PNG" alt="Billede af gambling" width="100%" height="15%">
-
             <h2>Svært at gennemskue</h2>
             <p>
                 Også hos Spillemyndigheden er man opmærksom på, at gambling har gjort sit indtog i computerspil.

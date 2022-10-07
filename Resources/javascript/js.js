@@ -102,7 +102,9 @@ function check(){
 		correct++;
 	}
 	
-	var pictures = ["img/RouletteSecond_1.gif", "img/RouletteSecond_2.gif", "img/Wrong.png"];
+	var quizBillede1 = ["img/wronggif.gif", "img/rightgif.gif", "img/Wrong.png"];
+    var quizBillede2 = ["img/wronggif.gif", "img/rightgif.gif", "img/Wrong.png"];
+    var quizBillede3 = ["img/wronggif.gif", "img/rightgif.gif", "img/Wrong.png"];
 	var messages = ["Great job!", "That's just okay", "You really need to do better"];
 	var score;
 
@@ -123,5 +125,7 @@ function check(){
 	document.getElementById("message").innerHTML = messages[score];
         //Bare for at test hvor mange vi får korrekt
 	document.getElementById("number_correct").innerHTML = "You got " + correct + " rgdgffdg.";
-	document.getElementById("picture").src = pictures[score];
+	document.getElementById("quizBillede1").src = quizBillede1[score];
+    document.getElementById("quizBillede2").src = quizBillede2[score];
+    document.getElementById("quizBillede3").src = quizBillede3[score];
 	}
