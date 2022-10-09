@@ -122,10 +122,21 @@ wholepage > bund{
 }
 .hverAnden {
     background-color: darkgray;
+    flex: 2;
 }
 
 #rightAnswer{
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+.Spinner{
+   display: flex 2;
+   align-items: center;
+   justify-content: center;
+   margin-top: 10px;
+}
+#buttonQuiz{
+    background-color: #4ca8af;
 }
