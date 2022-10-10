@@ -90,21 +90,28 @@ function check(){
 	var question2 = document.quiz1.question2.value;
 	var question3 = document.quiz1.question3.value;
 	var correct = 0;
+    //tjekker resultat af hvert enkelt spg. Alle er default forkerte fra start (=0)
+    var q1 = 0;
+    var q2 = 0;
+    var q3 = 0;
 
 
-	if (question1 == "2") {
+	if (question1 == "2") { 
 		correct++;
+        q1 = 1; //Sandt svar
 }
 	if (question2 == "2") {
 		correct++;
+        q2 = 1; // Sandt svar
 }	
 	if (question3 == "1") {
 		correct++;
+        q3 = 1; // Sandt svar
 	}
 	
-	var quizBillede1 = ["img/wronggif.gif", "img/rightgif.gif", "img/Wrong.png"];
-    var quizBillede2 = ["img/wronggif.gif", "img/rightgif.gif", "img/Wrong.png"];
-    var quizBillede3 = ["img/wronggif.gif", "img/rightgif.gif", "img/Wrong.png"];
+	var quizBillede1 = ["img/wronggif.gif", "img/rightgif.gif"];
+    var quizBillede2 = ["img/wronggif.gif", "img/rightgif.gif"];
+    var quizBillede3 = ["img/wronggif.gif", "img/rightgif.gif"];
 	var messages = ["Great job!", "That's just okay", "You really need to do better"];
 	var score;
 
@@ -124,8 +131,8 @@ function check(){
 
 	document.getElementById("message").innerHTML = messages[score];
         //Bare for at test hvor mange vi får korrekt
-	document.getElementById("number_correct").innerHTML = "You got " + correct + " rgdgffdg.";
-	document.getElementById("quizBillede1").src = quizBillede1[score];
-    document.getElementById("quizBillede2").src = quizBillede2[score];
-    document.getElementById("quizBillede3").src = quizBillede3[score];
+	document.getElementById("number_correct").innerHTML = "You got " + correct + " :)";
+	document.getElementById("quizBillede1").src = quizBillede1[q1];
+    document.getElementById("quizBillede2").src = quizBillede2[q2];
+    document.getElementById("quizBillede3").src = quizBillede3[q3];
 	}
