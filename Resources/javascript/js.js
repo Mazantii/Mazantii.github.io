@@ -1,6 +1,6 @@
 var card = document.getElementById("scratch"),
     cardCanvas = card.getContext('2d'),
-    brushRadius = (card.width / 100),
+    brushRadius = (card.width / 50),
     img = new Image();
 
 if (brushRadius < 1) { brushRadius = 1 }
@@ -9,8 +9,8 @@ img.onload = function(){
     cardCanvas.drawImage(img, 0, 0, card.width, card.height);
 }
 
-img.loc = 'https://www.palottery.state.pa.us/uploadedimages/';
-img.filename = 'Tripply_Million_CV.jpg';
+img.loc = 'img/';
+img.filename = 'skrabelod2.jpg';
 
 if (window.devicePixelRatio >= 2) {
   var nameParts = img.filename.split('.');
