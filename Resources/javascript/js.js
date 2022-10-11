@@ -128,6 +128,13 @@ function check(){
 	}
 
 	document.getElementById("after_submit").style.visibility = "visible";
+    
+    const element = document.getElementById("cherrypic1");
+    element.remove();
+    const element1 = document.getElementById("cherrypic2");
+    element1.remove();
+    const element2 = document.getElementById("cherrypic3");
+    element2.remove();
 
 	document.getElementById("message").innerHTML = messages[score];
         //Bare for at test hvor mange vi får korrekt

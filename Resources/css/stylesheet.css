@@ -138,5 +138,6 @@ wholepage > bund{
    margin-top: 10px;
 }
 #buttonQuiz{
-    background-color: #4ca8af;
+    width: 200px;
+    height: 200px;
 }
