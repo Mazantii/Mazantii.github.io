@@ -75,30 +75,59 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Manchester U vs Fullham</td>
+                        <td class="quizinsideborder">Manchester U vs Fullham</td>
                         <td><input type = "radio" id = "mc" name = "question1" value = "1"></td>
-                        <td><input type = "radio" id = "mc" name = "question1" value = "2"></td>
-                        <td><img id = "quizBillede1" class="Spinner"><img id = "cherrypic1" src="/img/Cherry.png"></td>
+                        <td class="quizinsideborder"><input type = "radio" id = "mc" name = "question1" value = "2"></td>
+                        <td><img id = "quizBillede1" class="Spinner"><img id = "cherrypic1" class = "Spinner" src="/img/Cherry.png"></td>   
                     </tr>
-                    <tr class="hverAnden">
-                        <td>2</td>
-                        <td>FCBiksekage vs igtja</td>
-                        <td><input type = "radio" id = "mc" name = "question2" value = "1"></td>
-                        <td><input type = "radio" id = "mc" name = "question2" value = "2"></td>
-                        <td><img id = "quizBillede2" class="Spinner"><img id = "cherrypic2" src="/img/Cherry.png"></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>AaB vs HB Køge</td>
-                        <td><input type = "radio" id = "mc" name = "question3" value = "1"><br></td>
-                        <td><input type = "radio" id = "mc" name = "question3" value = "2"><br></td>
-                        <td><img id = "quizBillede3" class="Spinner"><img id = "cherrypic3" src="/img/Cherry.png"></td>
-                    </tr>
-
                 </tbody>
                 </form>
+                </thead>
             </table>
             <input id = "buttonQuiz" type="image" src="/img/output-onlinegiftools.gif" onclick = "check();">
+            <br>
+
+            <table class = "content-table">
+                <thead id = "headerDetailQuiz">
+                    <tr>
+                        <th>Nr.</th>
+                        <th>Kampe</th>
+                        <th>Ja</th>
+                        <th>Nej</th>
+                        <th></th>
+                    </tr>
+                </thead>  
+                <thead>
+                    <tr>
+                        <td>2</td>
+                        <td class="quizinsideborder">FCBiksekage vs igtja</td>
+                        <td><input type = "radio" id = "mc" name = "question2" value = "1"></td>
+                        <td class="quizinsideborder"><input type = "radio" id = "mc" name = "question2" value = "2"></td>
+                        <td><img id = "quizBillede2" class="Spinner"><img id = "cherrypic2" class = "Spinner" src="/img/Cherry.png"></td>
+                    </tr>
+            </table>
+
+            <br>
+
+            <table class = "content-table">                
+            <tr>
+                <thead id = "headerDetailQuiz">
+                    <tr>
+                        <th>Nr.</th>
+                        <th>Kampe</th>
+                        <th>Ja</th>
+                        <th>Nej</th>
+                        <th></th>
+                    </tr>
+                </thead>  
+
+                <td>3</td>
+                <td class="quizinsideborder">AaB vs HB Køge</td>
+                <td><input type = "radio" id = "mc" name = "question3" value = "1"><br></td>
+                <td class="quizinsideborder"><input type = "radio" id = "mc" name = "question3" value = "2"><br></td>
+                <td><img id = "quizBillede3" class="Spinner"><img id = "cherrypic3" class="Spinner" src="/img/Cherry.png"></td>
+            </tr>
+            </table>
 
             <div id = "after_submit">
             <p id = "number_correct"></p>
