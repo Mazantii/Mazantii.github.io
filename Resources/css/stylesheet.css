@@ -40,7 +40,6 @@ wholepage > overskrift{
     height: auto;
 }
 
-
 h1 {
     background-image: url("/giphy.gif");
     background-size: cover;
@@ -50,27 +49,28 @@ h1 {
     text-transform: uppercase;
     font-size: 120px;
     margin: 10px 0;
-  }
+}
 
 h2 {
     font-size: 40px;
     margin: 10px 0;
-  }
+}
 
 wholepage > indhold{
     display: flex;
     
     flex-direction: column;
     align-items: center;
+    line-height: 2rem;
 
     background-color:#8fc3b0;
-    height: 1150vh;
+    height: auto;
     color: rgb(0, 0, 0);
 }
 
 wholepage > bund{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     background-color: rgb(90, 156, 90);
     height: 10vh;
@@ -168,3 +168,4 @@ thead, tbody tr{
     left: 450px;
     top: -170px;
 }
+

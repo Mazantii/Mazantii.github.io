@@ -143,3 +143,5 @@ function check(){
     //document.getElementById("quizBillede2").src = quizBillede2[q2];
     //document.getElementById("quizBillede3").src = quizBillede3[q3];
 	}
+
+    
