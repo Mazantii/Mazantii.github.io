@@ -195,3 +195,15 @@ section{
     transform: translateX(0);
 }
 
+.parallax{
+    background-image: url(/img/pcBonanza.jpg);
+
+    min-height: 100vh;
+    min-width: 100vw;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
