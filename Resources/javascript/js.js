@@ -87,20 +87,20 @@ document.addEventListener('scroll', processScroll);
 function check(){
 
 	var question1 = document.quiz1.question1.value;
-	var question2 = document.quiz1.question2.value;
-	var question3 = document.quiz1.question3.value;
+	//var question2 = document.quiz1.question2.value;
+	//var question3 = document.quiz1.question3.value;
 	var correct = 0;
     //tjekker resultat af hvert enkelt spg. Alle er default forkerte fra start (=0)
     var q1 = 0;
-    var q2 = 0;
-    var q3 = 0;
+    //var q2 = 0;
+    //var q3 = 0;
 
 
 	if (question1 == "2") { 
 		correct++;
         q1 = 1; //Sandt svar
 }
-	if (question2 == "2") {
+	/* if (question2 == "2") {
 		correct++;
         q2 = 1; // Sandt svar
 }	
@@ -108,7 +108,7 @@ function check(){
 		correct++;
         q3 = 1; // Sandt svar
 	}
-	
+	*/
 	var quizBillede1 = ["img/wronggif.gif", "img/rightgif.gif"];
     var quizBillede2 = ["img/wronggif.gif", "img/rightgif.gif"];
     var quizBillede3 = ["img/wronggif.gif", "img/rightgif.gif"];
@@ -118,7 +118,7 @@ function check(){
 	if (correct == 0) {
 		score = 2;
 	}
-
+    /*
 	if (correct > 0 && correct < 3) {
 		score = 1;
 	}
@@ -126,20 +126,20 @@ function check(){
 	if (correct == 3) {
 		score = 0;
 	}
-
+    */
 	document.getElementById("after_submit").style.visibility = "visible";
     
     const element = document.getElementById("cherrypic1");
     element.remove();
-    const element1 = document.getElementById("cherrypic2");
+   /* const element1 = document.getElementById("cherrypic2");
     element1.remove();
     const element2 = document.getElementById("cherrypic3");
     element2.remove();
-
+    */
 	document.getElementById("message").innerHTML = messages[score];
         //Bare for at test hvor mange vi får korrekt
 	document.getElementById("number_correct").innerHTML = "You got " + correct + " :)";
 	document.getElementById("quizBillede1").src = quizBillede1[q1];
-    document.getElementById("quizBillede2").src = quizBillede2[q2];
-    document.getElementById("quizBillede3").src = quizBillede3[q3];
+    //document.getElementById("quizBillede2").src = quizBillede2[q2];
+    //document.getElementById("quizBillede3").src = quizBillede3[q3];
 	}

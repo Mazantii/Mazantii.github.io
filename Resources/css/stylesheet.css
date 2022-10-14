@@ -105,29 +105,40 @@ wholepage > bund{
     position: fixed;
     top: 0;
 }
+
 /*Quiz*/
+
 .content-table {
     color: black;
-    display: inline-block;
+    display: table-row;
     font-size: 14px;
     height: auto;
-    line-height: 38px;;
+    line-height: 38px;
     text-shadow: #0e3058;
     background-color: floralwhite;
     border-spacing: 0;
-    justify-content: center;
     align-items: center;
-    
-}    
+}
 #headerDetailQuiz {
     background-color: lightgreen;
     border-top: 1px solid #008754;
     border-bottom: 1px solid #00603c;
     box-shadow: 1px 2px 2px rgb(0 0 0 / 20%);
+    vertical-align: inherit;
+    table-layout: fixed;
+    width: 800px;
 }
-.hverAnden {
-    background-color: darkgray;
-    flex: 2;
+thead, tbody tr{
+    display: table;
+    width: 400px;
+    text-align: center;
+    padding: 10px 5px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 800px;
+}   
+.quizinsideborder{
+    border-right: 1px solid #a9a9a9;
 }
 
 #rightAnswer{
@@ -137,12 +148,23 @@ wholepage > bund{
     
 }
 .Spinner{
-   display: flex 2;
+   display: flex 1;
    align-items: center;
    justify-content: center;
    margin-top: 10px;
+   width: 130px;
 }
+#cherrypic1, #cherrypic2, #cherrypic3{
+    display: flex 1;
+    align-items: center;
+    margin-top: -20px;
+    width: 130px;
+}
+
 #buttonQuiz{
     width: 200px;
     height: 200px;
+    position: relative;
+    left: 450px;
+    top: -170px;
 }
