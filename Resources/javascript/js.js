@@ -73,7 +73,7 @@ let processScroll = () => {
         //Her finder vi ud af hvor langt vi er på siden, ganger med 100 da detskal bruges i css, og tiføjer også % for css.
         scrollPercent = scrollTop / scrollBottom * 100 + "%";
 
-    //console.log(scrollPercent);
+    console.log(scrollPercent);
 
     //Her gør vi css variablen "--scrollAmount" lig med vores javascript variabel scrollPercent.
     document.getElementById('progress-bar').style.setProperty('--scrollAmount', scrollPercent);
