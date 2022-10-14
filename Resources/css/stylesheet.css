@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    font-size: large;
 }
 
 body{
@@ -51,15 +52,20 @@ h1 {
     margin: 10px 0;
   }
 
+h2 {
+    font-size: 40px;
+    margin: 10px 0;
+  }
+
 wholepage > indhold{
     display: flex;
     
     flex-direction: column;
     align-items: center;
 
-    background-color:#00603c;
-    height: 700vh;
-    color: rgb(255, 226, 240);
+    background-color:#8fc3b0;
+    height: 1150vh;
+    color: rgb(0, 0, 0);
 }
 
 wholepage > bund{
@@ -73,10 +79,9 @@ wholepage > bund{
 #scratch {
 	display: flex;
 	
-    background-image: url('https://www.palottery.state.pa.us/uploadedimages/Tripply_Million_UC.jpg');
-	background-size: 100%;
-    height: 157vh;
-	width: 70vh;
+    background-image: url('../../img/skrabelod.jpg');
+	background-size: contain;
+
     cursor: crosshair;
     cursor: url('http://jennamolby.com/scratch-and-win/images/coin1.png') 15 15, crosshair;
 }
