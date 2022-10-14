@@ -157,8 +157,11 @@ function check(){
         })
     })
     
-    const hiddenElements = document.querySelectorAll('.hidden');
+    const hiddenElements = document.querySelectorAll('.hidden2');
     hiddenElements.forEach((el)=> observer.observe(el));
+
+    const hiddenElements1 = document.querySelectorAll('.hidden1');
+    hiddenElements1.forEach((el)=> observer.observe(el));
     
 
     
