@@ -76,13 +76,6 @@ let processScroll = () => {
         scrollPercent = scrollTop / scrollBottom * 100 + "%";
         scrollscript = scrollTop / scrollBottom * 100;
 
-        if(scrollscript <= 26.5 && scrollscript >= 25.5){
-            console.log("skabt");
-            beskeder1();
-        }
-
-    console.log(scrollscript);
-
     //Her gør vi css variablen "--scrollAmount" lig med vores javascript variabel scrollPercent.
     document.getElementById('progress-bar').style.setProperty('--scrollAmount', scrollPercent);
 
@@ -152,21 +145,20 @@ function check(){
     //document.getElementById("quizBillede3").src = quizBillede3[q3];
 	}
 
+    const observer = new IntersectionObserver((entries) => {
 
-    let beskeder1 = () =>{
-        console.log("Scrollscript er: "+ scrollscript);
-        if(scrollscript <= 26.5 && scrollscript >= 25.5){
-            console.log("skabt");
-            document.getElementById("hidden").id = "show";
-        }
-        else{
-           // beskeder1hidden();
-        }
-        } 
-    let beskeder1hidden = () =>{
-        console.log("hejsa2");
-        document.getElementsByClassName("hidden").classList.remove('show');
-    }
+        entries.forEach((entry) =>{
+            console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+        })
+    })
+    
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el)=> observer.observe(el));
     
 
     
