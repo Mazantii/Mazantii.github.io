@@ -169,3 +169,29 @@ thead, tbody tr{
     top: -170px;
 }
 
+
+
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    padding-inline-start: 5px;
+    padding-bottom: 2px;
+    line-height: 1.2;
+}
+
+.hidden {
+    opacity: 1;
+    filter: blur(5px);
+    transform: translateX(-50%);
+    transition: all 3s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+

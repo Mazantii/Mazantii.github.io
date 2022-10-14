@@ -3,6 +3,8 @@ var card = document.getElementById("scratch"),
     brushRadius = (card.width / 50),
     img = new Image();
 
+var scrollscript;
+
 if (brushRadius < 1) { brushRadius = 1 }
 
 img.onload = function(){  
@@ -72,8 +74,7 @@ let processScroll = () => {
         scrollBottom = (docElem['scrollHeight'] || docBody['scrollHeight']) - window.innerHeight, 
         //Her finder vi ud af hvor langt vi er på siden, ganger med 100 da detskal bruges i css, og tiføjer også % for css.
         scrollPercent = scrollTop / scrollBottom * 100 + "%";
-
-    //console.log(scrollPercent);
+        scrollscript = scrollTop / scrollBottom * 100;
 
     //Her gør vi css variablen "--scrollAmount" lig med vores javascript variabel scrollPercent.
     document.getElementById('progress-bar').style.setProperty('--scrollAmount', scrollPercent);
@@ -143,5 +144,21 @@ function check(){
     //document.getElementById("quizBillede2").src = quizBillede2[q2];
     //document.getElementById("quizBillede3").src = quizBillede3[q3];
 	}
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach((entry) =>{
+            console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+        })
+    })
+    
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el)=> observer.observe(el));
+    
 
     
