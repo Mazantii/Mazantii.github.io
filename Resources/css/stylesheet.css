@@ -161,17 +161,31 @@ thead, tbody tr{
     width: 130px;
 }
 
-#buttonQuiz{
+#buttonQuiz{ /*knap til første quiz*/
     width: 200px;
     height: 200px;
-    position: relative;
+    position: relative; /*ikke smart*/
     left: 450px;
     top: -170px;
+}
+#buttonQuiz2{ /*knap til anden quiz*/
+    width: 200px;
+    height: 200px;
+    position: relative; /*ikke smart*/
+    left: 450px;
+    top: 425px;
+}
+#buttonQuiz3{ /*knap til tredje quiz*/
+    width: 200px;
+    height: 200px;
+    position: relative; /*ikke smart*/
+    left: 450px;
+    top: 200px;  
 }
 
 /*Dialog boksene*/
 section .hidden2{    
-    display: flex;
+    display: center;
     align-items: center;
     justify-content: center;
     min-height: 10vh;
