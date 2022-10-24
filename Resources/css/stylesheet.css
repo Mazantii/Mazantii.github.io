@@ -35,25 +35,26 @@ wholepage > overskrift{
     background-repeat: no-repeat;
     background-size: 15%;
     height: 40vh;
-
-    background-color: rgb(79, 193, 25);
+    background-color: rgb(53, 85, 40);
     height: auto;
 }
 
 h1 {
-    background-image: url("/giphy.gif");
+    background-image: url("/casinogifblurred.gif");
     background-size: cover;
     color: transparent;
     -moz-background-clip: text;
     -webkit-background-clip: text;
     text-transform: uppercase;
+    font-weight: bolder;
     font-size: 120px;
     margin: 10px 0;
 }
 
 h2 {
     font-size: 40px;
-    margin: 10px 0;
+    margin: 40px 0;
+    line-height: 7vh;
 }
 
 wholepage > indhold{
@@ -61,7 +62,7 @@ wholepage > indhold{
     
     flex-direction: column;
     align-items: center;
-    line-height: 2rem;
+    line-height: 6vh;
 
     background-color:#8fc3b0;
     height: auto;
@@ -168,4 +169,16 @@ thead, tbody tr{
     left: 450px;
     top: -170px;
 }
+
+.curtains {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
