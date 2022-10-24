@@ -162,12 +162,72 @@ thead, tbody tr{
     width: 130px;
 }
 
-#buttonQuiz{
+#buttonQuiz{ /*knap til første quiz*/
     width: 200px;
     height: 200px;
-    position: relative;
+    position: relative; /*ikke smart*/
     left: 450px;
-    top: -170px;
+    top: -250px;
+}
+#buttonQuiz2{ /*knap til anden quiz*/
+    width: 200px;
+    height: 200px;
+    position: relative; /*ikke smart*/
+    left: 450px;
+    top: -180px;
+}
+#buttonQuiz3{ /*knap til tredje quiz*/
+    width: 200px;
+    height: 200px;
+    position: relative; /*ikke smart*/
+    left: 450px;
+    top: -180px;  
+}
+
+/*Dialog boksene*/
+section .hidden2{    
+    display: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    padding-inline-start: 5px;
+    padding-bottom: 2px;
+    line-height: 1.2;
+}
+
+.hidden1 {
+    opacity: 1;
+    filter: blur(5px);
+    /*Hvor langt ude billedet starter*/
+    transform: translateX(-150%);
+    /*fade in animation tid*/
+    transition: all 3s;
+}
+.hidden2 {
+    opacity: 1;
+    filter: blur(5px);
+    /*Hvor langt ude billedet starter*/
+    transform: translateX(150%);
+    /*fade in animation tid*/
+    transition: all 3s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.parallax{
+    background-image: url(/img/pcBonanza.jpg);
+
+    min-height: 100vh;
+    min-width: 100vw;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .curtains {

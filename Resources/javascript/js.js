@@ -3,6 +3,8 @@ var card = document.getElementById("scratch"),
     brushRadius = (card.width / 50),
     img = new Image();
 
+var scrollscript;
+
 if (brushRadius < 1) { brushRadius = 1 }
 
 img.onload = function(){  
@@ -72,8 +74,7 @@ let processScroll = () => {
         scrollBottom = (docElem['scrollHeight'] || docBody['scrollHeight']) - window.innerHeight, 
         //Her finder vi ud af hvor langt vi er på siden, ganger med 100 da detskal bruges i css, og tiføjer også % for css.
         scrollPercent = scrollTop / scrollBottom * 100 + "%";
-
-    //console.log(scrollPercent);
+        scrollscript = scrollTop / scrollBottom * 100;
 
     //Her gør vi css variablen "--scrollAmount" lig med vores javascript variabel scrollPercent.
     document.getElementById('progress-bar').style.setProperty('--scrollAmount', scrollPercent);
@@ -110,8 +111,7 @@ function check(){
 	}
 	*/
 	var quizBillede1 = ["img/wronggif.gif", "img/rightgif.gif"];
-    var quizBillede2 = ["img/wronggif.gif", "img/rightgif.gif"];
-    var quizBillede3 = ["img/wronggif.gif", "img/rightgif.gif"];
+
 	var messages = ["Great job!", "That's just okay", "You really need to do better"];
 	var score;
 
@@ -143,5 +143,79 @@ function check(){
     //document.getElementById("quizBillede2").src = quizBillede2[q2];
     //document.getElementById("quizBillede3").src = quizBillede3[q3];
 	}
+    function check2(){
+        var question2 = document.quiz1.question1.value;
+        var correct = 0;
+        //tjekker resultat af hvert enkelt spg. Alle er default forkerte fra start (=0)
+        var q2 = 0;
+
+        if (question2 == "2") {
+            correct++;
+            q2 = 1; // Sandt svar
+        }
+        var quizBillede2 = ["img/wronggif.gif", "img/rightgif.gif"];
+        var messages = ["Great job!", "That's just okay", "You really need to do better"];
+        var score;
+
+        document.getElementById("after_submit").style.visibility = "visible";
+        
+        const element1 = document.getElementById("cherrypic2");
+        element1.remove();
+
+        document.getElementById("message").innerHTML = messages[score];
+            //Bare for at test hvor mange vi får korrekt
+        document.getElementById("number_correct").innerHTML = "You got " + correct + " :)";
+        document.getElementById("quizBillede2").src = quizBillede2[q2];
+    }
+
+    //Quiz Funktion
+function check3(){
+
+	var question3 = document.quiz1.question1.value;
+	var correct = 0;
+    //tjekker resultat af hvert enkelt spg. Alle er default forkerte fra start (=0)
+    var q3 = 0;
+
+	if (question3 == "1") {
+		correct++;
+        q3 = 1; // Sandt svar
+	}
+
+    var quizBillede3 = ["img/wronggif.gif", "img/rightgif.gif"];
+	var messages = ["Great job!", "That's just okay", "You really need to do better"];
+	var score;
+
+	if (correct == 3) {
+		score = 0;
+	}
+
+	document.getElementById("after_submit").style.visibility = "visible";
+    
+    const element2 = document.getElementById("cherrypic3");
+    element2.remove();
+	document.getElementById("message").innerHTML = messages[score];
+        //Bare for at test hvor mange vi får korrekt
+	document.getElementById("number_correct").innerHTML = "You got " + correct + " :)";
+    document.getElementById("quizBillede3").src = quizBillede3[q3];
+	}
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach((entry) =>{
+            console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+        })
+    })
+    
+    const hiddenElements = document.querySelectorAll('.hidden2');
+    hiddenElements.forEach((el)=> observer.observe(el));
+
+    const hiddenElements1 = document.querySelectorAll('.hidden1');
+    hiddenElements1.forEach((el)=> observer.observe(el));
+    
 
     
