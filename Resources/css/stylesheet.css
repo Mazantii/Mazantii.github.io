@@ -201,6 +201,7 @@ section .hidden2{
     /*fade in animation tid*/
     transition: all 3s;
 }
+
 .hidden2 {
     opacity: 1;
     filter: blur(5px);
@@ -228,6 +229,7 @@ section .hidden2{
     background-size: cover;
 }
 
+/* curtain gif */
 curtains {
     position: absolute;
     height: 100%;
@@ -240,7 +242,7 @@ curtains {
     flex-direction: column;
 
     opacity:1;
-    transition:opacity 1000ms;
+    transition:opacity 500ms;
 }
 
 curtains.waa {

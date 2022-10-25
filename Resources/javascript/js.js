@@ -217,9 +217,9 @@ function check3(){
     const hiddenElements1 = document.querySelectorAll('.hidden1');
     hiddenElements1.forEach((el)=> observer.observe(el));
     
-    /* bad news */
+    /* curtains ting */
 setTimeout(function(){
     document.getElementById('opening').className = 'waa';
-}, 7000);
+}, 10000);
 
     
