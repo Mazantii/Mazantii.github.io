@@ -107,6 +107,18 @@ wholepage > bund{
     top: 0;
 }
 
+#progress-bar2{
+    --scrollAmountpx: 0px;
+    position: fixed;
+    transform: translate(var(--scrollAmountpx), 0px);
+}
+#progress-bar3{
+    position: fixed;
+    --scrollAmountDegree: 0deg;
+    height: 10px;
+    transform: rotate(var(--scrollAmountDegree));
+}
+
 /*Quiz*/
 
 .content-table {
