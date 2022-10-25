@@ -9,6 +9,10 @@ body {
     overflow-x:hidden;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 p {
     justify-content: center;
     width: 50vw;
