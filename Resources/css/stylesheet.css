@@ -6,6 +6,7 @@
 
 body {
     margin: 0;
+    overflow-x:hidden;
 }
 
 p {
@@ -231,7 +232,7 @@ section .hidden2{
 
 /* curtain gif */
 curtains {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     top: 0;
@@ -240,11 +241,4 @@ curtains {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-    opacity:1;
-    transition:opacity 500ms;
-}
-
-curtains.waa {
-    opacity:0;
 }

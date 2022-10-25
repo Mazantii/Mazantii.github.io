@@ -219,7 +219,7 @@ function check3(){
     
     /* curtains ting */
 setTimeout(function(){
-    document.getElementById('opening').className = 'waa';
-}, 10000);
+    document.getElementById('opening').remove();
+}, 8000);
 
     
