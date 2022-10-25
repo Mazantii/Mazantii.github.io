@@ -1,24 +1,24 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-size: large;
 }
 
-body{
+body {
     margin: 0;
 }
 
-p{
+p {
     justify-content: center;
     width: 50vw;
 }
 
-iframe{
+iframe {
     width: 100%;
     height: 100vh;
 }
 
-wholepage{
+wholepage {
     display: flex;
     flex: 1;
     flex-flow: column wrap;
@@ -26,7 +26,7 @@ wholepage{
     justify-content: center;
 }
 
-wholepage > overskrift{
+wholepage > overskrift {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,12 +77,11 @@ wholepage > bund{
     height: 10vh;
 }
 
+/*skrabelod*/
 #scratch {
 	display: flex;
-	
-    background-image: url('../../img/skrabelod.jpg');
+    background-image: url('/img/skrabelod.jpg');
 	background-size: contain;
-
     cursor: crosshair;
     cursor: url('http://jennamolby.com/scratch-and-win/images/coin1.png') 15 15, crosshair;
 }
@@ -108,7 +107,6 @@ wholepage > bund{
 }
 
 /*Quiz*/
-
 .content-table {
     color: black;
     display: table-row;
@@ -199,7 +197,7 @@ section .hidden2{
     opacity: 1;
     filter: blur(5px);
     /*Hvor langt ude billedet starter*/
-    transform: translateX(-150%);
+    transform: translateX(150%);
     /*fade in animation tid*/
     transition: all 3s;
 }
@@ -207,7 +205,7 @@ section .hidden2{
     opacity: 1;
     filter: blur(5px);
     /*Hvor langt ude billedet starter*/
-    transform: translateX(150%);
+    transform: translateX(-150%);
     /*fade in animation tid*/
     transition: all 3s;
 }
@@ -230,7 +228,7 @@ section .hidden2{
     background-size: cover;
 }
 
-.curtains {
+curtains {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -240,5 +238,11 @@ section .hidden2{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  }
 
+    opacity:1;
+    transition:opacity 1000ms;
+}
+
+curtains.waa {
+    opacity:0;
+}
