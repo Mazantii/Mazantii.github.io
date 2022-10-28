@@ -76,8 +76,18 @@ let processScroll = () => {
         scrollPercent = scrollTop / scrollBottom * 100 + "%";
         scrollscript = scrollTop / scrollBottom * 100;
 
+        //bruger vi til tingen for enden af baren
+        var viewportWidth = document.documentElement.clientWidth;
+        tingProcent = viewportWidth / 100 * scrollscript + "px";
+        tingDegree = scrollscript * 3.6 + "deg";
+        console.log(tingProcent);
+        console.log(tingDegree);
+
+
     //Her gør vi css variablen "--scrollAmount" lig med vores javascript variabel scrollPercent.
     document.getElementById('progress-bar').style.setProperty('--scrollAmount', scrollPercent);
+    document.getElementById('progress-bar2').style.setProperty('--scrollAmountpx', tingProcent);
+    document.getElementById('progress-bar3').style.setProperty('--scrollAmountDegree', tingDegree);
 
 }
 
