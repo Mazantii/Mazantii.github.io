@@ -78,7 +78,7 @@ let processScroll = () => {
 
         //bruger vi til tingen for enden af baren
         var viewportWidth = document.documentElement.clientWidth;
-        tingProcent = viewportWidth / 100 * scrollscript + "px";
+        tingProcent = viewportWidth / 100 * scrollscript -15 + "px";
         tingDegree = scrollscript * 3.6 + "deg";
         console.log(tingProcent);
         console.log(tingDegree);
