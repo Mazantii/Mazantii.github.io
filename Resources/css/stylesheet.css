@@ -72,7 +72,10 @@ wholepage > indhold{
     
     line-height: 2rem;
 
-    background-color:#1c1c1c;
+    background-image: url(/img/baggrundsbillede\ webdok1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     
     height: auto;
     color: rgb(255, 255, 255);
