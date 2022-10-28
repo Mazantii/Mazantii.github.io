@@ -27,11 +27,6 @@ wholepage {
     flex-flow: column wrap;
     flex-direction: column;
     justify-content: center;
-
-    background-image: url(/img/baggrundsbillede\ webdok1.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 wholepage > overskrift {
@@ -250,7 +245,7 @@ section .hidden2{
 }
 
 .parallax{
-    background-image: url(/img/pcBonanza.jpg);
+    background-image: url(/img/pcBonanza.jpg) !important;
 
     min-height: 100vh;
     min-width: 100vw;
@@ -258,7 +253,8 @@ section .hidden2{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover !important;
+
 }
 
 /* curtain gif */
