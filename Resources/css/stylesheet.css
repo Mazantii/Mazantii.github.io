@@ -81,7 +81,12 @@ wholepage > bund{
     align-items: flex-end;
     justify-content: center;
     background-color: rgb(90, 156, 90);
-    height: 10vh;
+    height: 15vh;
+}
+bund > p{
+    justify-content: center;
+    width: auto;
+    color: whitesmoke;
 }
 
 /*skrabelod*/
