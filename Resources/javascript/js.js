@@ -217,5 +217,9 @@ function check3(){
     const hiddenElements1 = document.querySelectorAll('.hidden1');
     hiddenElements1.forEach((el)=> observer.observe(el));
     
+    /* curtains ting */
+setTimeout(function(){
+    document.getElementById('opening').remove();
+}, 8000);
 
     
