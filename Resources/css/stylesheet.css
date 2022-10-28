@@ -19,10 +19,6 @@ p {
     width: 50vw;
 }
 
-iframe {
-    width: 100%;
-    height: 100vh;
-}
 
 wholepage {
     display: flex;
@@ -104,6 +100,14 @@ wholepage > bund{
 }
 
 /*ID'S*/
+#infogram-mennesker{
+    position: relative;
+    height: 839;
+    width: 550;
+    overflow: hidden;
+
+}
+
 #progress-bar {
     /*CSS property*/
     --scrollAmount: 0%;
