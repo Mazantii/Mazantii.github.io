@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-size: large;
+    font-weight: bolder;
 }
 
 body {
@@ -57,11 +58,13 @@ h1 {
     font-size: 120px;
     margin: 10px 0;
 }
-
 h2 {
     font-size: 40px;
     margin: 40px 0;
     line-height: 7vh;
+}
+h3 {
+    font-size: 30px;
 }
 
 wholepage > indhold{
@@ -246,4 +249,14 @@ curtains {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.ROFUS{
+    line-height:25px;
+    font-size:20px;
+    color:rgb(255, 255, 255);
+    background: #000000;
+    margin:10px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 5px;
 }
