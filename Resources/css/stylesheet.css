@@ -229,7 +229,7 @@ section .hidden2{
     opacity: 1;
     filter: blur(5px);
     /*Hvor langt ude billedet starter*/
-    transform: translateX(-100%);
+    transform: translateX(100%);
     /*fade in animation tid*/
     transition: all 3s;
 }
@@ -238,7 +238,7 @@ section .hidden2{
     opacity: 1;
     filter: blur(5px);
     /*Hvor langt ude billedet starter*/
-    transform: translateX(100%);
+    transform: translateX(-100%);
     /*fade in animation tid*/
     transition: all 3s;
 }
