@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    font-size: large;
+    font-size: x-large;
     font-weight: bolder;
 }
 
@@ -119,9 +119,9 @@ wholepage > bund{
     /*CSS property*/
     --scrollAmount: 0%;
 
-    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    background: linear-gradient(90deg, rgba(28,121,9,0) 0%, rgba(28,121,9,1) 85%, rgba(27,111,10,1) 97%);
     width: var(--scrollAmount);
-    height: 10px;
+    height: 20px;
     position: fixed;
     top: 0;
 }
@@ -129,12 +129,12 @@ wholepage > bund{
 #progress-bar2{
     --scrollAmountpx: 0px;
     position: fixed;
-    transform: translate(var(--scrollAmountpx), 0px);
+    transform: translate(var(--scrollAmountpx), -5px);
 }
 #progress-bar3{
     position: fixed;
     --scrollAmountDegree: 0deg;
-    height: 10px;
+    height: 30px;
     transform: rotate(var(--scrollAmountDegree));
 }
 
