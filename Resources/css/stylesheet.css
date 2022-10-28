@@ -29,18 +29,20 @@ wholepage {
     flex-flow: column wrap;
     flex-direction: column;
     justify-content: center;
+
+    background-image: url(/img/baggrundsbillede\ webdok1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 wholepage > overskrift {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(249, 202, 35);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 15%;
     height: 40vh;
     background-color: rgb(53, 85, 40);
+
     height: auto;
 }
 
@@ -68,10 +70,9 @@ wholepage > indhold{
     flex-direction: column;
     align-items: center;
     line-height: 6vh;
-
     background-color:#8fc3b0;
     height: auto;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 wholepage > bund{
@@ -202,7 +203,7 @@ section .hidden2{
     opacity: 1;
     filter: blur(5px);
     /*Hvor langt ude billedet starter*/
-    transform: translateX(150%);
+    transform: translateX(-100%);
     /*fade in animation tid*/
     transition: all 3s;
 }
@@ -211,7 +212,7 @@ section .hidden2{
     opacity: 1;
     filter: blur(5px);
     /*Hvor langt ude billedet starter*/
-    transform: translateX(-150%);
+    transform: translateX(100%);
     /*fade in animation tid*/
     transition: all 3s;
 }
