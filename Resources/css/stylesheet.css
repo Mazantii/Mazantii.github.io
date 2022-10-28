@@ -61,10 +61,8 @@ h3 {
 
 wholepage > indhold{
     display: flex;
-    
     flex-direction: column;
     align-items: center;
-    
     line-height: 2rem;
 
     background-image: url(/img/baggrundsbillede\ webdok1.png);
