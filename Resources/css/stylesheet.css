@@ -1,55 +1,66 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-size: large;
+    font-weight: bolder;
 }
 
-body{
+body {
     margin: 0;
+    overflow-x:hidden;
 }
 
-p{
+::-webkit-scrollbar {
+    display: none;
+}
+
+p {
     justify-content: center;
     width: 50vw;
 }
 
 
-wholepage{
+wholepage {
     display: flex;
     flex: 1;
     flex-flow: column wrap;
     flex-direction: column;
     justify-content: center;
+
+    background-image: url(/img/baggrundsbillede\ webdok1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-wholepage > overskrift{
+wholepage > overskrift {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(249, 202, 35);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 15%;
     height: 40vh;
+    background-color: rgb(53, 85, 40);
 
-    background-color: rgb(79, 193, 25);
     height: auto;
 }
 
 h1 {
-    background-image: url("/giphy.gif");
+    background-image: url("/casinogifblurred.gif");
     background-size: cover;
     color: transparent;
     -moz-background-clip: text;
     -webkit-background-clip: text;
     text-transform: uppercase;
+    font-weight: bolder;
     font-size: 120px;
     margin: 10px 0;
 }
-
 h2 {
     font-size: 40px;
-    margin: 10px 0;
+    margin: 40px 0;
+    line-height: 7vh;
+}
+h3 {
+    font-size: 30px;
 }
 
 wholepage > indhold{
@@ -57,11 +68,10 @@ wholepage > indhold{
     
     flex-direction: column;
     align-items: center;
-    line-height: 2rem;
-
+    line-height: 6vh;
     background-color:#8fc3b0;
     height: auto;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 wholepage > bund{
@@ -72,12 +82,11 @@ wholepage > bund{
     height: 10vh;
 }
 
+/*skrabelod*/
 #scratch {
 	display: flex;
-	
-    background-image: url('../../img/skrabelod.jpg');
+    background-image: url('/img/skrabelod.jpg');
 	background-size: contain;
-
     cursor: crosshair;
     cursor: url('http://jennamolby.com/scratch-and-win/images/coin1.png') 15 15, crosshair;
 }
@@ -111,7 +120,6 @@ wholepage > bund{
 }
 
 /*Quiz*/
-
 .content-table {
     color: black;
     display: table-row;
@@ -202,15 +210,16 @@ section .hidden2{
     opacity: 1;
     filter: blur(5px);
     /*Hvor langt ude billedet starter*/
-    transform: translateX(-150%);
+    transform: translateX(-100%);
     /*fade in animation tid*/
     transition: all 3s;
 }
+
 .hidden2 {
     opacity: 1;
     filter: blur(5px);
     /*Hvor langt ude billedet starter*/
-    transform: translateX(150%);
+    transform: translateX(100%);
     /*fade in animation tid*/
     transition: all 3s;
 }
@@ -233,3 +242,25 @@ section .hidden2{
     background-size: cover;
 }
 
+/* curtain gif */
+curtains {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ROFUS{
+    line-height:25px;
+    font-size:20px;
+    color:rgb(255, 255, 255);
+    background: #000000;
+    margin:10px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 5px;
+}
