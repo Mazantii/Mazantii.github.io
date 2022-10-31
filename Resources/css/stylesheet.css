@@ -39,7 +39,7 @@ wholepage > overskrift {
     align-items: center;
     justify-content: center;
     height: 40vh;
-    background-color: rgb(53, 85, 40);
+    background-color: rgb(0, 0, 0);
 
     height: auto;
 }
@@ -72,7 +72,8 @@ wholepage > indhold{
     
     line-height: 2rem;
 
-    background-image: linear-gradient(to bottom, #000000, #331019, #621024, #920728, #c20024, #c20024, #c20024, #c20024, #920728, #621024, #331019, #000000);
+    background-image: url('/img/Adobebaggrunde/Blå.jpeg');
+    
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
