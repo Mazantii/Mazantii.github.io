@@ -72,7 +72,7 @@ wholepage > indhold{
     
     line-height: 2rem;
 
-    background-image: url(/img/baggrundsbillede\ webdok1.png);
+    background-image: linear-gradient(to bottom, #000000, #331019, #621024, #920728, #c20024, #c20024, #c20024, #c20024, #920728, #621024, #331019, #000000);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -282,4 +282,14 @@ curtains {
     margin:10px;
     padding: 15px 20px 15px 20px;
     border-radius: 5px;
+}
+
+/* Delete */
+#BilledeTest{
+    position: relative;
+    left: 1000px;
+    top: -250px;
+    height: 400px;
+    width: 250px;
+
 }
