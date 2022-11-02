@@ -72,7 +72,7 @@ wholepage > indhold{
     
     line-height: 2rem;
 
-    background-image: url('/img/Adobebaggrunde/Blå.jpeg');
+    background-image: linear-gradient(to bottom, #000000, #331019, #620f24, #920728, #c20023, #c20023, #c20023, #c20023, #920728, #620f24, #331019, #000000);
     
     background-repeat: no-repeat;
     background-attachment: fixed;
