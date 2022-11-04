@@ -19,6 +19,9 @@ p {
     width: 50vw;
     color: whitesmoke;
 }
+br {
+    margin-bottom: 30vh;
+}
 
 
 wholepage {
@@ -65,10 +68,8 @@ wholepage > indhold{
     align-items: center;
     line-height: 2rem;
 
-    background-image: url(/img/baggrundsbillede\ webdok1.png);
-    background-repeat: no-repeat;
+    background-image: url(/img/baggrund\ seamless.png);
     background-attachment: fixed;
-    background-size: cover;
     
     height: auto;
     color: rgb(255, 255, 255);
