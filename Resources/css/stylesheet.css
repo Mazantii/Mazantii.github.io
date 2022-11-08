@@ -143,6 +143,8 @@ wholepage > bund{
 .content-table {
     color: black;
     display: table-row;
+    flex-direction: column;
+    justify-content: center;
     font-size: 14px;
     height: auto;
     line-height: 38px;
@@ -151,7 +153,7 @@ wholepage > bund{
     border-spacing: 0;
     align-items: center;
 }
-#headerDetailQuiz {
+.headerDetailQuiz {
     background-color: lightgreen;
     border-top: 1px solid #008754;
     border-bottom: 1px solid #00603c;
@@ -160,6 +162,7 @@ wholepage > bund{
     table-layout: fixed;
     width: 800px;
 }
+
 thead, tbody tr{
     display: table;
     width: 400px;

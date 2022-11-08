@@ -232,4 +232,3 @@ setTimeout(function(){
     document.getElementById('opening').remove();
 }, 8000);
 
-    
