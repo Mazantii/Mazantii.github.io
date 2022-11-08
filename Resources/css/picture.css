@@ -1,0 +1,75 @@
+.pictureSize{
+    position: relative;
+    height: 20rem;
+    width: 20rem;
+}
+.venstrebilleder{
+    position: relative;
+    left: -22rem;
+    top: -8rem;
+}
+.højrebilleder{
+    position: relative;
+    left: 60rem;
+    top: -11rem;
+}
+
+#mobil_kasino{
+    position:relative;
+    width: 10rem;
+    height: 16rem;
+    left: 60rem;
+    top: -11rem;
+}
+
+#inspireret{
+    height: 20rem;
+    width: 20rem;
+}
+#Lokkemad{
+    height: 20rem;
+    width: 17rem;
+}
+#blev{
+    height: 22rem;
+    width: 20rem;
+}
+#gennemskue{
+    height: 22rem;
+    width: 20rem;
+    left: 56rem;
+}
+#gruppeGrine{
+    height: 16rem;
+    width: 18rem;
+    left: -22rem;
+    top: -12rem;
+}
+#pensonist{
+    height: 14rem;
+    width: 16rem;
+    left: 55rem;
+    top: -11rem;
+}
+#lange{
+    left: -22rem;
+    top: -8rem;
+    height: 16rem;
+    width: 24rem;
+}
+#styrer{
+    left: -20rem;
+    top: -12rem;
+    height: 16rem;
+    width: 20rem;
+}
+#svartSkole{
+    left: 55rem;
+    top: -11rem;
+}
+#spilletox{
+    left: 53rem;
+    top: -11rem;
+    height: 14rem;
+    width: 24rem;
+}

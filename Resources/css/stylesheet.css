@@ -288,12 +288,8 @@ curtains {
     border-radius: 5px;
 }
 
-/* Delete */
-#BilledeTest{
-    position: relative;
-    left: 1000px;
-    top: -250px;
-    height: 400px;
+#Henrik{
+    clip-path: ellipse(43% 30% at 51% 35%);
+    height: 300px;
     width: 250px;
-
 }
