@@ -65,7 +65,7 @@ wholepage > indhold{
     align-items: center;
     line-height: 2rem;
 
-    background-image: url('/img/Adobebaggrunde/Blå.jpeg');
+    background-image: linear-gradient(to bottom, #000000, #331019, #620f24, #920728, #c20023, #c20023, #c20023, #c20023, #920728, #620f24, #331019, #000000);
     
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -141,6 +141,8 @@ bund > p{
 .content-table {
     color: black;
     display: table-row;
+    flex-direction: column;
+    justify-content: center;
     font-size: 14px;
     height: auto;
     line-height: 38px;
@@ -149,7 +151,7 @@ bund > p{
     border-spacing: 0;
     align-items: center;
 }
-#headerDetailQuiz {
+.headerDetailQuiz {
     background-color: lightgreen;
     border-top: 1px solid #008754;
     border-bottom: 1px solid #00603c;
@@ -158,6 +160,7 @@ bund > p{
     table-layout: fixed;
     width: 800px;
 }
+
 thead, tbody tr{
     display: table;
     width: 400px;
@@ -272,6 +275,7 @@ curtains {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 1;
 }
 
 .ROFUS{
@@ -284,12 +288,8 @@ curtains {
     border-radius: 5px;
 }
 
-/* Delete */
-#BilledeTest{
-    position: relative;
-    left: 1000px;
-    top: -250px;
-    height: 400px;
+#Henrik{
+    clip-path: ellipse(43% 30% at 51% 35%);
+    height: 300px;
     width: 250px;
-
 }
