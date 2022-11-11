@@ -80,8 +80,6 @@ let processScroll = () => {
         var viewportWidth = document.documentElement.clientWidth;
         tingProcent = viewportWidth / 100 * scrollscript -15 + "px";
         tingDegree = scrollscript * 3.6 + "deg";
-        console.log(tingProcent);
-        console.log(tingDegree);
 
 
     //Her gør vi css variablen "--scrollAmount" lig med vores javascript variabel scrollPercent.
@@ -90,6 +88,8 @@ let processScroll = () => {
     document.getElementById('progress-bar3').style.setProperty('--scrollAmountDegree', tingDegree);
 
 }
+
+
 
 //Laver et event der lytter efter 'scroll', og køre funktionen processScroll hvis det sker.
 document.addEventListener('scroll', processScroll);

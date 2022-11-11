@@ -19,6 +19,9 @@ p {
     width: 50vw;
     color: whitesmoke;
 }
+br {
+    margin-bottom: 30vh;
+}
 
 
 wholepage {
@@ -65,11 +68,8 @@ wholepage > indhold{
     align-items: center;
     line-height: 2rem;
 
-    background-image: linear-gradient(to bottom, #000000, #331019, #620f24, #920728, #c20023, #c20023, #c20023, #c20023, #920728, #620f24, #331019, #000000);
-    
-    background-repeat: no-repeat;
+    background-image: url(/img/baggrund\ seamless.png);
     background-attachment: fixed;
-    background-size: cover;
     
     height: auto;
     color: rgb(255, 255, 255);
