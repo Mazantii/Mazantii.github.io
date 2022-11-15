@@ -232,10 +232,7 @@ thead, tbody tr{
 }
 
 /*Dialog boksene*/
-section .hidden2{    
-    display: center;
-    align-items: center;
-    justify-content: center;
+.hidden2 {    
     min-height: 10vh;
     padding-inline-start: 5px;
     padding-bottom: 2px;
@@ -248,7 +245,7 @@ section .hidden2{
     /*Hvor langt ude billedet starter*/
     transform: translateX(100%);
     /*fade in animation tid*/
-    transition: all 3s;
+    transition: all 2s;
 }
 
 .hidden2 {
@@ -257,13 +254,18 @@ section .hidden2{
     /*Hvor langt ude billedet starter*/
     transform: translateX(-100%);
     /*fade in animation tid*/
-    transition: all 3s;
+    transition: all 2s;
 }
 
-.show {
+.show1 {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0);
+    transform: translateX(40%);
+}
+.show2 {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(-40%);
 }
 
 .parallax{
