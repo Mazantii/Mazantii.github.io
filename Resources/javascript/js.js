@@ -231,4 +231,3 @@ function check3(){
 setTimeout(function(){
     document.getElementById('opening').remove();
 }, 8000);
-
