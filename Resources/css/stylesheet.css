@@ -8,6 +8,7 @@
 body {
     margin: 0;
     overflow-x:hidden;
+    width: 98vw;
 }
 
 ::-webkit-scrollbar {
@@ -19,10 +20,6 @@ p {
     width: 50vw;
     color: whitesmoke;
     text-shadow: 2px 2px #220303;
-}
-
-br {
-    margin-bottom: 30vh;
 }
 
 wholepage {
@@ -76,6 +73,125 @@ h2 {
 h3 {
     font-size: 30px;
 }
+
+/*NYE ID'S TIL OMSTRUKTURERING*/
+#container{
+    display: flex;
+    align-items: flex-end;
+    /*border: solid;*/
+  }
+
+#pause{
+width: 49vw;
+margin: auto;
+
+height: 700px;
+/*border: solid;*/
+}
+
+#lillepause{
+width: 49vw;
+margin: auto;
+    
+height: 400px;
+/*border: solid;*/
+}
+
+
+#wrapper {
+width: 20vw;
+height: 1300px;
+
+display: flex;
+justify-content: center;
+/*border: solid;*/
+
+}
+
+#wrapper2{
+width: 40vw;
+height: 1000px;
+/*border: solid;*/
+
+}
+
+
+#wrapper3{
+width: 40vw;
+
+margin: auto;
+height: auto;
+/*border: solid;*/
+
+}
+
+#wrapper4 {
+width: 40vw;
+margin: auto;
+
+height: 500px;
+    
+display: flex;
+justify-content: center;
+/*border: solid;*/
+}
+
+#sticky {
+position: sticky;
+
+width: 100px;
+height: 100px;
+
+top: 50vh;
+
+margin-bottom: 20vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+/*border: solid;*/
+}
+
+#sticky3 {
+    position: sticky;
+    
+    width: 100px;
+    height: 100px;
+    
+    top: 60vh;
+    
+    margin-bottom: 10vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: solid;*/
+    }
+
+  #sticky2 {
+position: sticky;
+
+top: 40vh;
+margin: auto;
+
+display: flex;
+/*border: solid;*/
+
+  }
+
+#stickybund {
+    position: sticky;
+
+    width: 100px;
+    height: 100px;
+    
+    top: 50vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
 
 wholepage > indhold{
     display: flex;
