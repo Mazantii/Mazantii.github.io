@@ -8,6 +8,7 @@
 body {
     margin: 0;
     overflow-x:hidden;
+    width: 98vw;
 }
 
 ::-webkit-scrollbar {
@@ -61,6 +62,85 @@ h2 {
 h3 {
     font-size: 30px;
 }
+
+/*NYE ID'S TIL OMSTRUKTURERING*/
+#container{
+    display: flex;
+    align-items: flex-end;
+  }
+
+#pause{
+width: 49vw;
+margin: auto;
+
+height: 700px;
+}
+
+#lillepause{
+width: 49vw;
+margin: auto;
+    
+height: 200px;
+}
+
+
+#wrapper {
+width: 20vw;
+height: 1500px;
+
+display: flex;
+justify-content: center;
+
+}
+
+#wrapper2{
+width: 40vw;
+height: 1000px;
+
+}
+
+
+#wrapper3{
+width: 40vw;
+
+margin: auto;
+height: auto;
+
+}
+
+#wrapper4 {
+width: 40vw;
+margin: auto;
+
+height: 500px;
+    
+display: flex;
+justify-content: center;
+}
+
+#sticky {
+position: sticky;
+
+width: 100px;
+height: 100px;
+top: 50vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+  }
+
+  #sticky2 {
+position: sticky;
+
+top: 40vh;
+margin: auto;
+
+display: flex;
+
+  }
+
 
 wholepage > indhold{
     display: flex;
