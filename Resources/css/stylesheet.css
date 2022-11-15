@@ -58,6 +58,7 @@ overskrift > .hero-text {
     transform: translate(-50%, -50%);
 }
 
+
 h1 {
     font-size: 80px;
     margin: 40px 0;
@@ -419,8 +420,8 @@ curtains {
 
 #Henrik{
     clip-path: ellipse(43% 30% at 51% 35%);
-    height: 300px;
-    width: 250px;
+    height: 400px;
+    width: 300px;
 }
 
 billedePara {
