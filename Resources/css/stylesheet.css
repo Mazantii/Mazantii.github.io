@@ -1,8 +1,9 @@
 * {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    font-size: x-large;
-    font-weight: bolder;
+    font-family: "Share", cursive;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-size: 30px;
+    font-weight:400;
 }
 
 body {
@@ -200,7 +201,8 @@ wholepage > indhold{
     align-items: center;
     line-height: 2rem;
 
-    background-image: url(/img/baggrund\ seamless.png);
+    background-color: rgb(52, 52, 52);
+    /*background-image: url(/img/baggrund\ seamless.png);*/
     background-attachment: fixed;
     
     height: auto;
@@ -255,6 +257,7 @@ bund > p{
     height: 20px;
     position: fixed;
     top: 0;
+    z-index: 10;
 }
 
 #progress-bar2{
@@ -390,6 +393,14 @@ thead, tbody tr{
     min-width: 100vw;
     background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+}
+.parallax2{
+    height: 100vh;
+    min-width: 100vw;
+    background-attachment: fixed;
+    background-position: center -300px;
     background-repeat: no-repeat;
     background-size: cover !important;
 }
