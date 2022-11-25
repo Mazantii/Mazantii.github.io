@@ -202,8 +202,7 @@ wholepage > indhold{
     align-items: center;
     line-height: 2rem;
 
-    background-color: rgb(52, 52, 52);
-    /*background-image: url(/img/baggrund\ seamless.png);*/
+    background-image: url(/img/baggrund\ seamless.png);
     background-attachment: fixed;
     
     height: auto;
