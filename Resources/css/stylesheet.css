@@ -173,16 +173,16 @@ align-items: center;
     }
 
   #sticky2 {
-position: sticky;
+    position: sticky;
+    
+    top: 40vh;
+    margin: auto;
 
-top: 40vh;
-margin: auto;
-
-display: flex;
-/*border: solid;*/
-background-color: #f8f8f5b0;
-
-  }
+    display: flex;
+    /*border: solid;*/
+    background-color: #f8f8f5b0;
+    
+}
 
 #stickybund {
     position: sticky;
@@ -210,7 +210,7 @@ wholepage > indhold{
     background-attachment: fixed;
     
     height: auto;
-    color: rgb(255, 255, 255);
+   /* color: rgb(255, 255, 255);*/
 }
 
 wholepage > bund{
@@ -457,4 +457,13 @@ quote {
     text-shadow: 4px 4px #000000;
     text-align: center;
     font-style: oblique;
+}
+
+.highlight {
+    background: #c26161;
+    color: rgb(0, 0, 0); 
+    padding: 2px;   
+    border-radius: 3px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
