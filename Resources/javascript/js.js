@@ -81,18 +81,41 @@ let processScroll = () => {
         tingProcent = viewportWidth / 100 * scrollscript -15 + "px";
         tingDegree = scrollscript * 3.6 + "deg";
 
-
     //Her gør vi css variablen "--scrollAmount" lig med vores javascript variabel scrollPercent.
     document.getElementById('progress-bar').style.setProperty('--scrollAmount', scrollPercent);
+
     document.getElementById('progress-bar2').style.setProperty('--scrollAmountpx', tingProcent);
     document.getElementById('progress-bar3').style.setProperty('--scrollAmountDegree', tingDegree);
 
+    console.log(scrollscript);
+
+    //Her fikser vi animationer
+    if(scrollscript > 1 && scrollscript < 3.2 ) {
+        document.getElementById('mont').style.setProperty('transform', 'scale(600%)');
+
+    } else{
+        document.getElementById('mont').style.setProperty('transform', 'scale(500%)');
+    }
+
 }
 
+/*Et forsøg på at gøre det samme som koden for oven, men med en enkelt container...
+let zoom = () => {
+    let box = document.querySelector(".mol");
+    let scrollTop = box['scrollTop'];
+    let scrollBottom = box['scrollHeight'];
+
+    let scrollPercent = scrollTop / scrollBottom * 100 + "%";
+    let width = box.offsetWidth;
+    let height = box.offsetHeight;
+
+    console.log(scrollPercent);
+} */
 
 
 //Laver et event der lytter efter 'scroll', og køre funktionen processScroll hvis det sker.
 document.addEventListener('scroll', processScroll);
+//document.addEventListener('scroll', zoom);
 
 //Quiz Funktion
 function check(){

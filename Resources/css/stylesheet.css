@@ -205,9 +205,12 @@ wholepage > indhold{
     line-height: 1rem;
     text-align: center;
 
-    background-color: rgb(16, 16, 16);
+    background-image: linear-gradient(to bottom, #27ba3b, #25ae38, #23a235, #219632, #1f8a2f, 
+    #1d7f2b, #1a7428, #186924, #145c1f, #104f19, #0d4314, #09370f);
+
+    /*background-color: rgb(16, 16, 16);*/
     /*background-image: url(/img/baggrund\ seamless.png);*/
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     
     height: auto;
    /* color: rgb(255, 255, 255);*/
@@ -225,6 +228,17 @@ bund > p{
     width: auto;
     color: whitesmoke;
 }
+
+/*Animationer*/
+#mont{
+    transition: all 1s ease-in-out;
+    transform: scale(300%);
+    position: relative;
+    z-index: -1;
+    left: 25vw;
+}
+
+
 
 /*skrabelod*/
 #scratch {
@@ -460,7 +474,7 @@ quote {
 }
 
 .highlight {
-    background: #c26161;
+    background: #2c4c02;
     color: rgb(0, 0, 0); 
     padding: 2px;   
     border-radius: 3px;
