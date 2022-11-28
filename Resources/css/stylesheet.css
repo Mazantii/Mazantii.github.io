@@ -205,8 +205,8 @@ wholepage > indhold{
     line-height: 1rem;
     text-align: center;
 
-    background-image: linear-gradient(to bottom, #27ba3b, #25ae38, #23a235, #219632, #1f8a2f, 
-    #1d7f2b, #1a7428, #186924, #145c1f, #104f19, #0d4314, #09370f);
+    background-image: linear-gradient(to bottom, #2c6402, #2c6002, #2c5c02, #2c5902, 
+    #2c5502, #2d5102, #2e4c02, #2e4802, #2e4202, #2e3d02, #2d3702, #2c3202);
 
     /*background-color: rgb(16, 16, 16);*/
     /*background-image: url(/img/baggrund\ seamless.png);*/
