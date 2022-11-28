@@ -205,14 +205,12 @@ wholepage > indhold{
     line-height: 1rem;
     text-align: center;
 
-    background-image: linear-gradient(to bottom, #2c6402, #2c6002, #2c5c02, #2c5902, 
-    #2c5502, #2d5102, #2e4c02, #2e4802, #2e4202, #2e3d02, #2d3702, #2c3202);
+    /*background-image: url(/img/Baggrundsbilleder/bg4.png) !important; */
 
-    /*background-color: rgb(16, 16, 16);*/
+    /*background-color: rgb(176, 191, 148);*/
+    background-color: rgb(16, 16, 16);
     /*background-image: url(/img/baggrund\ seamless.png);*/
-    /*background-attachment: fixed;*/
     
-    height: auto;
    /* color: rgb(255, 255, 255);*/
 }
 
