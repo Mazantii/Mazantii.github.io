@@ -79,7 +79,7 @@ let processScroll = () => {
         //bruger vi til tingen for enden af baren
         var viewportWidth = document.documentElement.clientWidth;
         tingProcent = viewportWidth / 100 * scrollscript -15 + "px";
-        tingDegree = scrollscript * 3.6 + "deg";
+        tingDegree = scrollscript * 3.6 * 10 + "deg";
 
     //Her gør vi css variablen "--scrollAmount" lig med vores javascript variabel scrollPercent.
     document.getElementById('progress-bar').style.setProperty('--scrollAmount', scrollPercent);
@@ -137,6 +137,13 @@ let processScroll = () => {
 
     } else{
         document.getElementById('infogram-mennesker').style.setProperty('transform', 'scale(100%)');
+    }
+
+    if(scrollscript > 23 && scrollscript < 24.2 ) {
+        document.getElementById('Henrik').style.setProperty('transform', 'scale(170%)');
+
+    } else{
+        document.getElementById('Henrik').style.setProperty('transform', 'scale(110%)');
     }
 
 }
