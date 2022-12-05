@@ -90,7 +90,7 @@ let processScroll = () => {
     console.log(scrollscript);
 
     //Her fikser vi animationer
-    if(scrollscript > 1 && scrollscript < 3.2 ) {
+    if(scrollscript > 1.5 && scrollscript < 3.2 ) {
         document.getElementById('mont').style.setProperty('transform', 'scale(200%)');
 
     } else{
