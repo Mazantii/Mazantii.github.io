@@ -97,6 +97,48 @@ let processScroll = () => {
         document.getElementById('mont').style.setProperty('transform', 'scale(150%)');
     }
 
+    if(scrollscript > 5.6 && scrollscript < 8.2 ) {
+        document.getElementById('mobil').style.setProperty('transform', 'scale(100%)');
+
+    } else{
+        document.getElementById('mobil').style.setProperty('transform', 'scale(80%)');
+    }
+
+    if(scrollscript > 9.6 && scrollscript < 11.5 ) {
+        document.getElementById('kantine').style.setProperty('transform', 'scale(200%)');
+
+    } else{
+        document.getElementById('kantine').style.setProperty('transform', 'scale(150%)');
+    }
+
+    if(scrollscript > 12.2 && scrollscript < 14.3 ) {
+        document.getElementById('til4').style.setProperty('transform', 'scale(300%)');
+
+    } else{
+        document.getElementById('til4').style.setProperty('transform', 'scale(200%)');
+    }
+
+    if(scrollscript > 15.4 && scrollscript < 16.3 ) {
+        document.getElementById('mellem').style.setProperty('transform', 'scale(120%)');
+
+    } else{
+        document.getElementById('mellem').style.setProperty('transform', 'scale(100%)');
+    }
+
+    if(scrollscript > 17.5 && scrollscript < 20.3 ) {
+        document.getElementById('far').style.setProperty('transform', 'scale(200%)');
+
+    } else{
+        document.getElementById('far').style.setProperty('transform', 'scale(150%)');
+    }
+
+    if(scrollscript > 21.1 && scrollscript < 22.2 ) {
+        document.getElementById('infogram-mennesker').style.setProperty('transform', 'scale(120%)');
+
+    } else{
+        document.getElementById('infogram-mennesker').style.setProperty('transform', 'scale(100%)');
+    }
+
 }
 
 /*Et forsøg på at gøre det samme som koden for oven, men med en enkelt container...

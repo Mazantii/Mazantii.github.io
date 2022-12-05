@@ -250,6 +250,64 @@ bund > p{
     left: 25vw;
 }
 
+#mobil{
+    transition: all 1s ease-in-out;
+    transform: scale(100%);
+    position: relative; 
+    z-index: -1; 
+    right: 39vw;
+}
+
+#kantine{
+    transition: all 1s ease-in-out;
+    transform: scale(100%);
+    position: relative; 
+    z-index: -1; 
+    right: 6.7vw;
+}
+
+#til4{
+    transition: all 1s ease-in-out;
+    transform: scale(100%);
+    position: relative; 
+    z-index: -1; 
+    left: 24vw;
+}
+
+#mellem{
+    position: relative;
+    transition: all 1s ease-in-out;
+    transform: scale(100%);
+    bottom: 200px;
+}
+
+#far{
+    position: relative;
+    transition: all 1s ease-in-out;
+    transform: scale(100%);
+    right: 20vw;
+    bottom: 12vh;
+}
+
+#infogram-mennesker{
+    position: relative;
+    transition: all 1s ease-in-out;
+    transform: scale(100%);
+    height: 839;
+    width: 550;
+    overflow: hidden;
+}
+
+#Henrik{
+    position: relative;
+    transition: all 1s ease-in-out;
+    transform: scale(100%);
+    clip-path: ellipse(43% 30% at 51% 35%);
+    height: 400px;
+    width: 300px;
+}
+
+
 
 
 /*skrabelod*/
@@ -270,14 +328,6 @@ bund > p{
 }
 
 /*ID'S*/
-#infogram-mennesker{
-    position: relative;
-    height: 839;
-    width: 550;
-    overflow: hidden;
-
-}
-
 #progress-bar {
     /*CSS property*/
     --scrollAmount: 0%;
@@ -459,11 +509,6 @@ curtains {
     border-radius: 5px;
 }
 
-#Henrik{
-    clip-path: ellipse(43% 30% at 51% 35%);
-    height: 400px;
-    width: 300px;
-}
 
 billedePara {
     display: flex;
