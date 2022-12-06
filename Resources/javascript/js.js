@@ -119,10 +119,10 @@ let processScroll = () => {
     }
 
     if(scrollscript > 15.4 && scrollscript < 16.3 ) {
-        document.getElementById('mellem').style.setProperty('transform', 'scale(120%)');
+        document.getElementById('mellem').style.setProperty('transform', 'scale(110%)');
 
     } else{
-        document.getElementById('mellem').style.setProperty('transform', 'scale(100%)');
+        document.getElementById('mellem').style.setProperty('transform', 'scale(90%)');
     }
 
     if(scrollscript > 17.5 && scrollscript < 20.3 ) {

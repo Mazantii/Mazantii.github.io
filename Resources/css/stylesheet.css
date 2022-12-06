@@ -241,7 +241,6 @@ bund > p{
 /*Animationer*/
 #mont{
     transition: all 1s ease-in-out;
-    transform: scale(300%);
     position: relative;
     z-index: -1;
     left: 25vw;
@@ -257,15 +256,13 @@ bund > p{
 
 #kantine{
     transition: all 1s ease-in-out;
-    transform: scale(100%);
     position: relative; 
     z-index: -1; 
-    right: 6.7vw;
+    right: 11vw;
 }
 
 #til4{
     transition: all 1s ease-in-out;
-    transform: scale(100%);
     position: relative; 
     z-index: -1; 
     left: 24vw;
@@ -274,14 +271,12 @@ bund > p{
 #mellem{
     position: relative;
     transition: all 1s ease-in-out;
-    transform: scale(100%);
     bottom: 200px;
 }
 
 #far{
     position: relative;
     transition: all 1s ease-in-out;
-    transform: scale(100%);
     right: 20vw;
     bottom: 12vh;
 }
@@ -289,7 +284,6 @@ bund > p{
 #infogram-mennesker{
     position: relative;
     transition: all 1s ease-in-out;
-    transform: scale(100%);
     height: 839;
     width: 550;
     overflow: hidden;
@@ -298,10 +292,162 @@ bund > p{
 #Henrik{
     position: relative;
     transition: all 1s ease-in-out;
-    transform: scale(100%);
     clip-path: ellipse(43% 30% at 51% 35%);
     height: 400px;
     width: 300px;
+}
+
+#fiske{
+    position: relative;
+    transition: all 1s ease-in-out;
+    height: 80vh;
+    bottom: 50px;
+    left: 40vw;
+}
+
+#fanget{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    height: 100vh; 
+    bottom: 50px; 
+    right:15vw;
+}
+
+#smaat{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    height: 70vh; 
+    left:17vw;
+    z-index: -1;
+}
+
+#bonus{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    height: 70vh; 
+    left:45vw;
+    z-index: -1;
+}
+
+#okonomi{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    height: 70vh; 
+    left:15vw;
+    bottom: 5vh;
+}
+
+#kr4000{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 70vh; 
+    right: 17vw;
+    bottom: 15vh;
+}
+
+#bliverved{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 60vh; 
+    left: 20vw;
+}
+
+#megettabt{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 90vh; 
+    left: 40vw;
+    bottom: 10vh;
+}
+
+#grine{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 70vh; 
+    left: 40vw;
+    bottom: 10vh;
+}
+
+#detmed{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 70vh; 
+    left: 20vw;
+    bottom: 10vh;
+}
+
+#reelt{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 50vh; 
+    left: 45vw;
+    bottom: 10vh;
+}
+
+#impuls{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 80vh; 
+    right: 17vw;
+    bottom: 10vh;
+}
+
+#ende{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 40vh; 
+    left: 22vw;
+}
+
+#vadde{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 60vh; 
+    right: 17vw;
+    bottom: 10vh;
+}
+
+#skolen{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 60vh; 
+    left: 10vw;
+}
+
+#quitter{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 70vh; 
+    left: 38vw;
+    bottom: 10vh;
+}
+
+#jagte{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 60vh; 
+    right: 15vw;
+    bottom: 10vh;
+}
+
+#rof{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 40vh; 
+    left: 30vw;
 }
 
 
