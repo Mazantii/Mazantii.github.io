@@ -12,7 +12,7 @@ img.onload = function(){
 }
 
 img.loc = 'img/';
-img.filename = 'skrabelod2.jpg';
+img.filename = 'skrabelod/skrabelodaldersgrænse2.png';
 
 if (window.devicePixelRatio >= 2) {
   var nameParts = img.filename.split('.');

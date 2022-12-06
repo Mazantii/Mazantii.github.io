@@ -456,7 +456,7 @@ bund > p{
 /*skrabelod*/
 #scratch {
 	display: flex;
-    background-image: url('/img/skrabelod.jpg');
+    background-image: url('/img/skrabelod/skrabelodaldersgrænse.png');
 	background-size: contain;
     cursor: crosshair;
     cursor: url('http://jennamolby.com/scratch-and-win/images/coin1.png') 15 15, crosshair;
