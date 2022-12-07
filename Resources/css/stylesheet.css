@@ -37,6 +37,7 @@ button{
 button:hover{
     background-color: #000000;
     color: white;
+    cursor: pointer;
 }
 
 wholepage {
@@ -114,6 +115,53 @@ height: 200px;
 /*border: solid;*/
 }
 
+.infoboks{
+    left: 0vw;
+    position: relative;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 30vw;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .infoboks:hover{
+    background-color: #ccc;
+}
+
+.infoboks:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+    }
+
+    .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }
+
+.infoindhold{
+    max-height: 0px;
+    max-width: 30vw;
+    transition: max-height 0.2s ease-out;
+    margin-top: 5vh;
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+.infoindhold > p{
+    left: 10vw;
+    color: rgb(0, 0, 0);
+    /*text-shadow: 2px 2px #220303;*/
+    z-index: 2;
+    margin: 0px;
+    padding: 0;
+}
 
 #wrapper {
 width: 20vw;
@@ -483,9 +531,6 @@ bund > p{
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-size: xx-large;
-}
-#cardContainer figcaption {   
-  margin-top: 2rem; 
 }
 
 /*ID'S*/

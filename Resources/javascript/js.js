@@ -1,3 +1,24 @@
+//skrabelod infoboks
+var coll = document.getElementsByClassName("infoboks");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+    if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+  });
+} 
+
 //skrabelod 1
 var card = document.getElementById("scratch"),
     cardCanvas = card.getContext('2d'),
@@ -224,12 +245,12 @@ let processScroll = () => {
         document.getElementById('mont').style.setProperty('transform', 'scale(150%)');
     }
 
-    if(scrollscript > 4.5 && scrollscript < 5.5 ) {
+    /*if(scrollscript > 4.5 && scrollscript < 5.5 ) {
         document.getElementById('scratch').style.setProperty('transform', 'scale(120%)');
 
     } else{
         document.getElementById('scratch').style.setProperty('transform', 'scale(100%)');
-    }
+    }*/
 
     if(scrollscript > 5.6 && scrollscript < 9.2 ) {
         document.getElementById('mobil').style.setProperty('transform', 'scale(100%)');
