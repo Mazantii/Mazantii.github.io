@@ -118,25 +118,33 @@ height: 200px;
 .infoboks{
     left: 0vw;
     position: relative;
-    background-color: #eee;
-    color: #444;
+    background-image: url(https://cdn.discordapp.com/attachments/916289339057651742/1050128260127789066/image.png);
+    color: #000000;
     cursor: pointer;
     padding: 18px;
     width: 30vw;
     border: none;
+    border-radius: 0px 0px 10px 10px;
     text-align: center;
     outline: none;
     font-size: 15px;
+    margin-top: 0;
+    box-shadow: 10px 10px 0px;
 }
 
-.active, .infoboks:hover{
-    background-color: #ccc;
+.active{
+    background-image: url(https://cdn.discordapp.com/attachments/916289339057651742/1050128260127789066/image.png);
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 10px 0px 0px;
+}
+.infoboks:hover{
+    color: #2c2c2c;
 }
 
 .infoboks:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
-    color: white;
+    color: rgb(0, 0, 0);
     float: right;
     margin-left: 5px;
     }
@@ -146,21 +154,28 @@ height: 200px;
     }
 
 .infoindhold{
+    display: flex;
     max-height: 0px;
     max-width: 30vw;
     transition: max-height 0.2s ease-out;
-    margin-top: 5vh;
-    padding: 0 18px;
     overflow: hidden;
-    background-color: #f1f1f1;
+    /*background-color: #e1d070;*/
+    background-image: url(https://cdn.discordapp.com/attachments/916289339057651742/1050128260127789066/image.png);
+    text-align: center;
+    font-size: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 10px 10px;
 }
 .infoindhold > p{
-    left: 10vw;
-    color: rgb(0, 0, 0);
+    max-width: 30vw;
+    align-items: center;
+    left: 100px;
+    color: #000000;
     /*text-shadow: 2px 2px #220303;*/
     z-index: 2;
     margin: 0px;
-    padding: 0;
+    padding: 0px 10px 10px 10px;
+
 }
 
 #wrapper {
@@ -509,6 +524,7 @@ bund > p{
 	background-size: contain;
     cursor: crosshair;
     cursor: url('http://jennamolby.com/scratch-and-win/images/coin1.png') 15 15, crosshair;
+    box-shadow: 10px 10px;
 }
 #scratch2 {
 	display: flex;
@@ -517,6 +533,7 @@ bund > p{
 	background-size: contain;
     cursor: crosshair;
     cursor: url('http://jennamolby.com/scratch-and-win/images/coin1.png') 15 15, crosshair;
+    box-shadow: 10px 10px;
 }
 
 #scratch3 {
@@ -526,6 +543,7 @@ bund > p{
 	background-size: contain;
     cursor: crosshair;
     cursor: url('http://jennamolby.com/scratch-and-win/images/coin1.png') 15 15, crosshair;
+    box-shadow: 10px 10px;
 }
 #cardContainer { 
   text-align: center;
