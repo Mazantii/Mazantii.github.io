@@ -3,12 +3,12 @@
     font-family: "Share", cursive;
     /*font-family: 'Open Sans', sans-serif;*/
     font-size: 30px;
-    font-weight:400;
+    font-weight: 400;
 }
 
 body {
     margin: 0;
-    overflow-x:hidden;
+    overflow-x: hidden;
     width: 98vw;
 }
 
@@ -25,8 +25,8 @@ p {
     margin: 10px;
 }
 
-button{
-    position:relative;
+button {
+    position: relative;
     top: 5vh;
     left: 40vw;
     background-color: #f8f8f5d2;
@@ -34,7 +34,8 @@ button{
     z-index: 10;
     border-radius: 10px;
 }
-button:hover{
+
+button:hover {
     background-color: #000000;
     color: white;
 }
@@ -61,7 +62,7 @@ overskrift {
     position: relative;
 }
 
-overskrift > .hero-text {
+overskrift>.hero-text {
     color: whitesmoke;
     justify-content: center;
     width: 60vw;
@@ -87,104 +88,105 @@ h2 {
     margin: 40px 0;
     line-height: 7vh;
 }
+
 h3 {
     font-size: 30px;
 }
 
 /*NYE ID'S TIL OMSTRUKTURERING*/
-#container{
+#container {
     display: flex;
     align-items: flex-end;
     /*border: solid;*/
-  }
-
-#pause{
-width: 49vw;
-margin: auto;
-
-height: 700px;
-/*border: solid;*/
 }
 
-#lillepause{
-width: 49vw;
-margin: auto;
-    
-height: 200px;
-/*border: solid;*/
+#pause {
+    width: 49vw;
+    margin: auto;
+
+    height: 700px;
+    /*border: solid;*/
+}
+
+#lillepause {
+    width: 49vw;
+    margin: auto;
+
+    height: 200px;
+    /*border: solid;*/
 }
 
 
 #wrapper {
-width: 20vw;
-height: 900px;
+    width: 20vw;
+    height: 900px;
 
-display: flex;
-justify-content: center;
-/*border: solid;*/
-
-}
-
-#wrapper2{
-width: 40vw;
-height: 600px;
-/*border: solid;*/
+    display: flex;
+    justify-content: center;
+    /*border: solid;*/
 
 }
 
+#wrapper2 {
+    width: 40vw;
+    height: 600px;
+    /*border: solid;*/
 
-#wrapper3{
-width: 40vw;
+}
 
-margin: auto;
-height: auto;
-/*border: solid;*/
+
+#wrapper3 {
+    width: 40vw;
+
+    margin: auto;
+    height: auto;
+    /*border: solid;*/
 
 }
 
 #wrapper4 {
-width: 40vw;
-margin: auto;
+    width: 40vw;
+    margin: auto;
 
-height: 500px;
-    
-display: flex;
-justify-content: center;
-/*border: solid;*/
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    /*border: solid;*/
 }
 
 #sticky {
-position: sticky;
+    position: sticky;
 
-width: 100px;
-height: 100px;
+    width: 100px;
+    height: 100px;
 
-top: 50vh;
+    top: 50vh;
 
-margin-bottom: 5vh;
+    margin-bottom: 5vh;
 
-display: flex;
-justify-content: center;
-align-items: center;
-/*border: solid;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: solid;*/
 }
 
 #sticky3 {
     position: sticky;
-    
+
     width: 100px;
     height: 100px;
-    
+
     top: 52vh;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+}
 
-  #sticky2 {
+#sticky2 {
     position: sticky;
-    
+
     top: 40vh;
     margin: auto;
 
@@ -192,7 +194,7 @@ align-items: center;
 
     background-color: #f8f8f5d2;
     border-radius: 10px;
-    
+
 }
 
 #stickybund {
@@ -200,16 +202,16 @@ align-items: center;
 
     width: 100px;
     height: 100px;
-    
+
     top: 50vh;
-    
+
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 
-wholepage > indhold{
+wholepage>indhold {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,67 +223,68 @@ wholepage > indhold{
     /*background-color: rgb(176, 191, 148);*/
     /*background-color: rgb(16, 16, 16);*/
     background-image: url("//s.worldofsolitaire.com/texture/0/greenfelt.jpg");
-    
-   /* color: rgb(255, 255, 255);*/
+
+    /* color: rgb(255, 255, 255);*/
 }
 
-wholepage > bund{
+wholepage>bund {
     display: flex;
     align-items: flex-end;
     justify-content: center;
     background-color: rgb(90, 156, 90);
     height: 15vh;
 }
-bund > p{
+
+bund>p {
     justify-content: center;
     width: auto;
     color: whitesmoke;
 }
 
 /*Animationer*/
-#mont{
+#mont {
     transition: all 1s ease-in-out;
     position: relative;
     z-index: -1;
     left: 25vw;
 }
 
-#mobil{
+#mobil {
     transition: all 1s ease-in-out;
     transform: scale(100%);
-    position: relative; 
-    z-index: -1; 
+    position: relative;
+    z-index: -1;
     right: 39vw;
 }
 
-#kantine{
+#kantine {
     transition: all 1s ease-in-out;
-    position: relative; 
-    z-index: -1; 
+    position: relative;
+    z-index: -1;
     right: 11vw;
 }
 
-#til4{
+#til4 {
     transition: all 1s ease-in-out;
-    position: relative; 
-    z-index: -1; 
+    position: relative;
+    z-index: -1;
     left: 24vw;
 }
 
-#mellem{
+#mellem {
     position: relative;
     transition: all 1s ease-in-out;
     bottom: 200px;
 }
 
-#far{
+#far {
     position: relative;
     transition: all 1s ease-in-out;
     right: 20vw;
     bottom: 12vh;
 }
 
-#infogram-mennesker{
+#infogram-mennesker {
     position: relative;
     transition: all 1s ease-in-out;
     height: 839;
@@ -289,7 +292,7 @@ bund > p{
     overflow: hidden;
 }
 
-#Henrik{
+#Henrik {
     position: relative;
     transition: all 1s ease-in-out;
     clip-path: ellipse(43% 30% at 51% 35%);
@@ -297,7 +300,7 @@ bund > p{
     width: 300px;
 }
 
-#fiske{
+#fiske {
     position: relative;
     transition: all 1s ease-in-out;
     height: 80vh;
@@ -305,148 +308,148 @@ bund > p{
     left: 40vw;
 }
 
-#fanget{
-    position: relative; 
+#fanget {
+    position: relative;
     transition: all 1s ease-in-out;
-    height: 100vh; 
-    bottom: 50px; 
-    right:15vw;
+    height: 100vh;
+    bottom: 50px;
+    right: 15vw;
 }
 
-#smaat{
-    position: relative; 
+#smaat {
+    position: relative;
     transition: all 1s ease-in-out;
-    height: 70vh; 
-    left:17vw;
+    height: 70vh;
+    left: 17vw;
     z-index: -1;
 }
 
-#bonus{
-    position: relative; 
+#bonus {
+    position: relative;
     transition: all 1s ease-in-out;
-    height: 70vh; 
-    left:45vw;
+    height: 70vh;
+    left: 45vw;
     z-index: -1;
 }
 
-#okonomi{
-    position: relative; 
+#okonomi {
+    position: relative;
     transition: all 1s ease-in-out;
-    height: 70vh; 
-    left:15vw;
+    height: 70vh;
+    left: 15vw;
     bottom: 5vh;
 }
 
-#kr4000{
-    position: relative; 
+#kr4000 {
+    position: relative;
     transition: all 1s ease-in-out;
     z-index: -1;
-    height: 70vh; 
+    height: 70vh;
     right: 17vw;
     bottom: 15vh;
 }
 
-#bliverved{
-    position: relative; 
+#bliverved {
+    position: relative;
     transition: all 1s ease-in-out;
     z-index: -1;
-    height: 60vh; 
+    height: 60vh;
     left: 20vw;
 }
 
-#megettabt{
-    position: relative; 
+#megettabt {
+    position: relative;
     transition: all 1s ease-in-out;
     z-index: -1;
-    height: 90vh; 
+    height: 90vh;
     left: 40vw;
     bottom: 10vh;
 }
 
-#grine{
-    position: relative; 
+#grine {
+    position: relative;
     transition: all 1s ease-in-out;
     z-index: -1;
-    height: 70vh; 
+    height: 70vh;
     left: 40vw;
     bottom: 10vh;
 }
 
-#detmed{
-    position: relative; 
+#detmed {
+    position: relative;
     transition: all 1s ease-in-out;
     z-index: -1;
-    height: 70vh; 
+    height: 70vh;
     left: 20vw;
     bottom: 10vh;
 }
 
-#reelt{
-    position: relative; 
+#reelt {
+    position: relative;
     transition: all 1s ease-in-out;
     z-index: -1;
-    height: 50vh; 
+    height: 50vh;
     left: 45vw;
     bottom: 10vh;
 }
 
-#impuls{
-    position: relative; 
+#impuls {
+    position: relative;
     transition: all 1s ease-in-out;
     z-index: -1;
-    height: 80vh; 
+    height: 80vh;
     right: 17vw;
     bottom: 10vh;
 }
 
-#ende{
-    position: relative; 
+#ende {
+    position: relative;
     transition: all 1s ease-in-out;
     z-index: -1;
-    height: 40vh; 
+    height: 40vh;
     left: 22vw;
 }
 
-#vadde{
-    position: relative; 
+#vadde {
+    position: relative;
     transition: all 1s ease-in-out;
     z-index: -1;
-    height: 60vh; 
+    height: 60vh;
     right: 17vw;
     bottom: 10vh;
 }
 
-#skolen{
-    position: relative; 
+#skolen {
+    position: relative;
     transition: all 1s ease-in-out;
     z-index: -1;
-    height: 60vh; 
+    height: 60vh;
     left: 10vw;
 }
 
-#quitter{
-    position: relative; 
+#quitter {
+    position: relative;
     transition: all 1s ease-in-out;
     z-index: -1;
-    height: 70vh; 
+    height: 70vh;
     left: 38vw;
     bottom: 10vh;
 }
 
-#jagte{
-    position: relative; 
+#jagte {
+    position: relative;
     transition: all 1s ease-in-out;
     z-index: -1;
-    height: 60vh; 
+    height: 60vh;
     right: 15vw;
     bottom: 10vh;
 }
 
-#rof{
-    position: relative; 
+#rof {
+    position: relative;
     transition: all 1s ease-in-out;
     z-index: -1;
-    height: 40vh; 
+    height: 40vh;
     left: 30vw;
 }
 
@@ -455,37 +458,40 @@ bund > p{
 
 /*skrabelod*/
 #scratch {
-	display: flex;
+    display: flex;
     transition: all 1s ease-in-out;
     background-image: url('/img/skrabelod/skrabelodaldersgrænse.png');
-	background-size: contain;
+    background-size: contain;
     cursor: crosshair;
     cursor: url('http://jennamolby.com/scratch-and-win/images/coin1.png') 15 15, crosshair;
 }
+
 #scratch2 {
-	display: flex;
+    display: flex;
     transition: all 1s ease-in-out;
     background-image: url('/img/skrabelod/skrabelodb&u.png');
-	background-size: contain;
+    background-size: contain;
     cursor: crosshair;
     cursor: url('http://jennamolby.com/scratch-and-win/images/coin1.png') 15 15, crosshair;
 }
 
 #scratch3 {
-	display: flex;
+    display: flex;
     transition: all 1s ease-in-out;
     background-image: url('/img/skrabelod/skrabelodmen.png');
-	background-size: contain;
+    background-size: contain;
     cursor: crosshair;
     cursor: url('http://jennamolby.com/scratch-and-win/images/coin1.png') 15 15, crosshair;
 }
-#cardContainer { 
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-size: xx-large;
+
+#cardContainer {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: xx-large;
 }
-#cardContainer figcaption {   
-  margin-top: 2rem; 
+
+#cardContainer figcaption {
+    margin-top: 2rem;
 }
 
 /*ID'S*/
@@ -501,12 +507,13 @@ bund > p{
     z-index: 10;
 }
 
-#progress-bar2{
+#progress-bar2 {
     --scrollAmountpx: 0px;
     position: fixed;
     transform: translate(var(--scrollAmountpx), -5px);
 }
-#progress-bar3{
+
+#progress-bar3 {
     position: fixed;
     --scrollAmountDegree: 0deg;
     height: 30px;
@@ -527,6 +534,7 @@ bund > p{
     border-spacing: 0;
     align-items: center;
 }
+
 .headerDetailQuiz {
     background-color: lightgreen;
     border-top: 1px solid #008754;
@@ -537,7 +545,8 @@ bund > p{
     width: 800px;
 }
 
-thead, tbody tr{
+thead,
+tbody tr {
     display: table;
     width: 400px;
     text-align: center;
@@ -545,55 +554,68 @@ thead, tbody tr{
     table-layout: fixed;
     border-collapse: collapse;
     width: 800px;
-}   
-.quizinsideborder{
+}
+
+.quizinsideborder {
     border-right: 1px solid #a9a9a9;
 }
 
-#rightAnswer{
+#rightAnswer {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
-.Spinner{
-   display: flex 1;
-   align-items: center;
-   justify-content: center;
-   margin-top: 10px;
-   width: 130px;
+
+.Spinner {
+    display: flex 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 130px;
 }
-#cherrypic1, #cherrypic2, #cherrypic3{
+
+#cherrypic1,
+#cherrypic2,
+#cherrypic3 {
     display: flex 1;
     align-items: center;
     margin-top: -20px;
     width: 130px;
 }
 
-#buttonQuiz{ /*knap til første quiz*/
+#buttonQuiz {
+    /*knap til første quiz*/
     width: 200px;
     height: 200px;
-    position: relative; /*ikke smart*/
+    position: relative;
+    /*ikke smart*/
     left: 450px;
     top: -250px;
 }
-#buttonQuiz2{ /*knap til anden quiz*/
+
+#buttonQuiz2 {
+    /*knap til anden quiz*/
     width: 200px;
     height: 200px;
-    position: relative; /*ikke smart*/
+    position: relative;
+    /*ikke smart*/
     left: 450px;
     top: -180px;
 }
-#buttonQuiz3{ /*knap til tredje quiz*/
+
+#buttonQuiz3 {
+    /*knap til tredje quiz*/
     width: 200px;
     height: 200px;
-    position: relative; /*ikke smart*/
+    position: relative;
+    /*ikke smart*/
     left: 450px;
-    top: -180px;  
+    top: -180px;
 }
 
 /*Dialog boksene*/
-.hidden2 {    
+.hidden2 {
     min-height: 10vh;
     padding-inline-start: 5px;
     padding-bottom: 2px;
@@ -623,13 +645,14 @@ thead, tbody tr{
     filter: blur(0);
     transform: translateX(40%);
 }
+
 .show2 {
     opacity: 1;
     filter: blur(0);
     transform: translateX(-40%);
 }
 
-.parallax{
+.parallax {
     min-height: 100vh;
     min-width: 100vw;
     background-attachment: fixed;
@@ -637,7 +660,8 @@ thead, tbody tr{
     background-repeat: no-repeat;
     background-size: cover !important;
 }
-.parallax2{
+
+.parallax2 {
     height: 100vh;
     min-width: 100vw;
     background-attachment: fixed;
@@ -660,12 +684,12 @@ curtains {
     z-index: 1;
 }
 
-.ROFUS{
-    line-height:25px;
-    font-size:20px;
+.ROFUS {
+    line-height: 25px;
+    font-size: 20px;
     color: whitesmoke;
     background: #00603dc2;
-    margin:10px;
+    margin: 10px;
     padding: 15px 20px 15px 20px;
     border-radius: 5px;
 }
@@ -693,8 +717,8 @@ quote {
 
 .highlight {
     background: #f50909;
-    color: rgb(255, 255, 255); 
-    padding: 2px;   
+    color: rgb(255, 255, 255);
+    padding: 2px;
     border-radius: 3px;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
