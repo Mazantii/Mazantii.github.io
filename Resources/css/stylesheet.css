@@ -19,9 +19,24 @@ body {
 p {
     justify-content: center;
     width: 50vw;
-    color: whitesmoke;
-    text-shadow: 2px 2px #220303;
+    color: rgb(0, 0, 0);
+    /*text-shadow: 2px 2px #220303;*/
     z-index: 2;
+    margin: 10px;
+}
+
+button{
+    position:relative;
+    top: 5vh;
+    left: 40vw;
+    background-color: #f8f8f5d2;
+    border: none;
+    z-index: 10;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #000000;
+    color: white;
 }
 
 wholepage {
@@ -36,7 +51,7 @@ overskrift {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/img/gamblingOverskrift.jpg) !important;
+    background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/1391A/production/_108345108_26a760ca-791a-4d61-b915-3d89030aac5e.jpg.webp) !important;
 
     height: 100vh;
 
@@ -49,23 +64,22 @@ overskrift {
 overskrift > .hero-text {
     color: whitesmoke;
     justify-content: center;
-    width: 50vw;
+    width: 60vw;
 
     font-weight: bolder;
 
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 
 h1 {
-    font-size: 80px;
+    font-size: 110px;
     margin: 40px 0;
     text-shadow: 4px 4px #220303;
-
 }
 
 h2 {
@@ -96,14 +110,14 @@ height: 700px;
 width: 49vw;
 margin: auto;
     
-height: 400px;
+height: 200px;
 /*border: solid;*/
 }
 
 
 #wrapper {
 width: 20vw;
-height: 1300px;
+height: 900px;
 
 display: flex;
 justify-content: center;
@@ -113,7 +127,7 @@ justify-content: center;
 
 #wrapper2{
 width: 40vw;
-height: 1000px;
+height: 600px;
 /*border: solid;*/
 
 }
@@ -147,7 +161,7 @@ height: 100px;
 
 top: 50vh;
 
-margin-bottom: 20vh;
+margin-bottom: 5vh;
 
 display: flex;
 justify-content: center;
@@ -161,26 +175,25 @@ align-items: center;
     width: 100px;
     height: 100px;
     
-    top: 60vh;
-    
-    margin-bottom: 10vh;
+    top: 52vh;
     
     display: flex;
     justify-content: center;
     align-items: center;
-    /*border: solid;*/
     }
 
   #sticky2 {
-position: sticky;
+    position: sticky;
+    
+    top: 40vh;
+    margin: auto;
 
-top: 40vh;
-margin: auto;
+    display: flex;
 
-display: flex;
-/*border: solid;*/
-
-  }
+    background-color: #f8f8f5d2;
+    border-radius: 10px;
+    
+}
 
 #stickybund {
     position: sticky;
@@ -200,13 +213,16 @@ wholepage > indhold{
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 2rem;
+    line-height: 1.1rem;
+    text-align: center;
 
-    background-image: url(/img/baggrund\ seamless.png);
-    background-attachment: fixed;
+    /*background-image: url(/img/Baggrundsbilleder/bg4.png) !important; */
+
+    /*background-color: rgb(176, 191, 148);*/
+    /*background-color: rgb(16, 16, 16);*/
+    background-image: url("//s.worldofsolitaire.com/texture/0/greenfelt.jpg");
     
-    height: auto;
-    color: rgb(255, 255, 255);
+   /* color: rgb(255, 255, 255);*/
 }
 
 wholepage > bund{
@@ -222,10 +238,243 @@ bund > p{
     color: whitesmoke;
 }
 
+/*Animationer*/
+#mont{
+    transition: all 1s ease-in-out;
+    position: relative;
+    z-index: -1;
+    left: 25vw;
+}
+
+#mobil{
+    transition: all 1s ease-in-out;
+    transform: scale(100%);
+    position: relative; 
+    z-index: -1; 
+    right: 39vw;
+}
+
+#kantine{
+    transition: all 1s ease-in-out;
+    position: relative; 
+    z-index: -1; 
+    right: 11vw;
+}
+
+#til4{
+    transition: all 1s ease-in-out;
+    position: relative; 
+    z-index: -1; 
+    left: 24vw;
+}
+
+#mellem{
+    position: relative;
+    transition: all 1s ease-in-out;
+    bottom: 200px;
+}
+
+#far{
+    position: relative;
+    transition: all 1s ease-in-out;
+    right: 20vw;
+    bottom: 12vh;
+}
+
+#infogram-mennesker{
+    position: relative;
+    transition: all 1s ease-in-out;
+    height: 839;
+    width: 550;
+    overflow: hidden;
+}
+
+#Henrik{
+    position: relative;
+    transition: all 1s ease-in-out;
+    clip-path: ellipse(43% 30% at 51% 35%);
+    height: 400px;
+    width: 300px;
+}
+
+#fiske{
+    position: relative;
+    transition: all 1s ease-in-out;
+    height: 80vh;
+    bottom: 50px;
+    left: 40vw;
+}
+
+#fanget{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    height: 100vh; 
+    bottom: 50px; 
+    right:15vw;
+}
+
+#smaat{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    height: 70vh; 
+    left:17vw;
+    z-index: -1;
+}
+
+#bonus{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    height: 70vh; 
+    left:45vw;
+    z-index: -1;
+}
+
+#okonomi{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    height: 70vh; 
+    left:15vw;
+    bottom: 5vh;
+}
+
+#kr4000{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 70vh; 
+    right: 17vw;
+    bottom: 15vh;
+}
+
+#bliverved{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 60vh; 
+    left: 20vw;
+}
+
+#megettabt{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 90vh; 
+    left: 40vw;
+    bottom: 10vh;
+}
+
+#grine{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 70vh; 
+    left: 40vw;
+    bottom: 10vh;
+}
+
+#detmed{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 70vh; 
+    left: 20vw;
+    bottom: 10vh;
+}
+
+#reelt{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 50vh; 
+    left: 45vw;
+    bottom: 10vh;
+}
+
+#impuls{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 80vh; 
+    right: 17vw;
+    bottom: 10vh;
+}
+
+#ende{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 40vh; 
+    left: 22vw;
+}
+
+#vadde{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 60vh; 
+    right: 17vw;
+    bottom: 10vh;
+}
+
+#skolen{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 60vh; 
+    left: 10vw;
+}
+
+#quitter{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 70vh; 
+    left: 38vw;
+    bottom: 10vh;
+}
+
+#jagte{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 60vh; 
+    right: 15vw;
+    bottom: 10vh;
+}
+
+#rof{
+    position: relative; 
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 40vh; 
+    left: 30vw;
+}
+
+
+
+
 /*skrabelod*/
 #scratch {
 	display: flex;
-    background-image: url('/img/skrabelod.jpg');
+    transition: all 1s ease-in-out;
+    background-image: url('/img/skrabelod/skrabelodaldersgrænse.png');
+	background-size: contain;
+    cursor: crosshair;
+    cursor: url('http://jennamolby.com/scratch-and-win/images/coin1.png') 15 15, crosshair;
+}
+#scratch2 {
+	display: flex;
+    transition: all 1s ease-in-out;
+    background-image: url('/img/skrabelod/skrabelodb&u.png');
+	background-size: contain;
+    cursor: crosshair;
+    cursor: url('http://jennamolby.com/scratch-and-win/images/coin1.png') 15 15, crosshair;
+}
+
+#scratch3 {
+	display: flex;
+    transition: all 1s ease-in-out;
+    background-image: url('/img/skrabelod/skrabelodmen.png');
 	background-size: contain;
     cursor: crosshair;
     cursor: url('http://jennamolby.com/scratch-and-win/images/coin1.png') 15 15, crosshair;
@@ -240,19 +489,11 @@ bund > p{
 }
 
 /*ID'S*/
-#infogram-mennesker{
-    position: relative;
-    height: 839;
-    width: 550;
-    overflow: hidden;
-
-}
-
 #progress-bar {
     /*CSS property*/
     --scrollAmount: 0%;
 
-    background: linear-gradient(90deg, rgba(28,121,9,0) 0%, rgba(28,121,9,1) 85%, rgba(27,111,10,1) 97%);
+    background: linear-gradient(90deg, rgba(121, 33, 9, 0) 0%, #fc2a2a 85%, #f50909 97%);
     width: var(--scrollAmount);
     height: 20px;
     position: fixed;
@@ -429,11 +670,6 @@ curtains {
     border-radius: 5px;
 }
 
-#Henrik{
-    clip-path: ellipse(43% 30% at 51% 35%);
-    height: 400px;
-    width: 300px;
-}
 
 billedePara {
     display: flex;
@@ -453,4 +689,13 @@ quote {
     text-shadow: 4px 4px #000000;
     text-align: center;
     font-style: oblique;
+}
+
+.highlight {
+    background: #f50909;
+    color: rgb(255, 255, 255); 
+    padding: 2px;   
+    border-radius: 3px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }

@@ -22,7 +22,6 @@
 <body>
     <div id="progress-bar"> <div id="progress-bar2"><img id="progress-bar3" src="/img/Grøn terning.png" alt="Terning til loadingbar"></div></div> 
     <wholepage>
-
         <overskrift class="parallax">
             <div class="hero-text">
                 <h1>Pengespil på nettet vinder frem blandt unge <br> <!--<br> - Vi hygger os med det. Det er det, der er så farligt</h1>-->
@@ -33,40 +32,49 @@
         </overskrift>
 
         <indhold>
+            <a href="https://fyens.dk/artikel/pengespil-p%C3%A5-nettet-vinder-frem-blandt-gymnasiedrenge-dybt-bekymrende-mener-leder-af-center-for-ludomani">
+                <button>Klik her for at læse <br>den fulde artikel</button></a>
             <div id="lillepause"></div>
-            <div id="container">
+            <div class="mol" id="container">
                 <div id="wrapper">
                     <div id="sticky">
-                        <img src="img/Baggrundsbilleder/Jagte mønten.png">
+                        <img src="img/Hvide figure/Jagte mønten hvid.png" style="position:relative; left: 25vw; scale: 150%;">
+                        <img id="mont" src="img/Jagte mønten HD.png">
                     </div>
                 </div>
                 <div id="wrapper2">
                     <div id="sticky2">
-                        <p>Frederik Munck, Frederik Panduro og Mads Gräs kender alle til fristelsen ved at "jagte mønten".
+                        <p>Frederik Munck, Frederik Panduro og Mads Gräs kender alle til fristelsen ved at <span class="highlight">"jagte mønten"</span>.
                             Alle er de 18 år, går på HHX på Nyborg Gymnasium og bruger deres SU og pengene fra studiejobbet, når de 2-4 gange om ugen smider penge på virtuelle kasinoer.
                         </p>
                     </div>
                 </div>
             </div>
-            <div id="pause"></div>
+            <div id="pause" style="height: 300px;"></div>
+            <figure id="cardContainer">
+                <canvas id="scratch" width="800" height="450"></canvas>
+                </figure>
+            <div id="pause" style="height: 350px;"></div>
             <div id="container">
                 <div id="wrapper2">
-                    <div id="sticky2">
+                    <div id="sticky2" style="z-index: 1;">
                         <p>På Nyborg Gymnasium er pengespil på nettet blevet hverdag for 18-årige Mads Gräs, Frederik Panduro og Frederik Munck. 
-                            Flere gange ugentligt satser de penge på online kasinoer. Tendensen er dybt bekymrende, mener centerleder ved Center for Ludomani.
+                            Flere gange ugentligt satser de penge på <span class="highlight">online kasinoer</span>. Tendensen er dybt bekymrende, mener centerleder ved Center for Ludomani.
                         </p>
                     </div>
                 </div>
                 <div id="wrapper">
                     <div id="sticky">
-                        <img id="mobil_kasino" src="img/Baggrundsbilleder/Online Kasino.png">
+                        <img id="mobil_kasino" src="img/Hvide figure/Online Kasino hvid.png" style="position:relative; left: 20vw;">
+                        <img id="mobil" src="img/Baggrundsbilleder/Online Kasino.png">
                     </div>
                 </div>
             </div>
-        <div id="lillepause"></div>
+        <div id="lillepause" style="height: 500px;"></div>
             <div id="wrapper4">
                 <div id="stickybund">
-                    <img src="img/Baggrundsbilleder/Kantine.png">
+                    <img src="img/Hvide figure/Kantine hvid.png" style="position:relative; left: 10vw;">
+                    <img src="img/Baggrundsbilleder/Kantine.png" id="kantine">
                 </div>
             </div>
             <div id="wrapper3">
@@ -77,11 +85,12 @@
                     </p>
                 </div>
             </div>
-        <div id="lillepause"></div>
+        <div id="lillepause" style="height: 300px;"></div>
         <div id="container">
             <div id="wrapper">
                 <div id="sticky">
-                    <img src="img/Baggrundsbilleder/2 til 4 gange om ugen.png">
+                    <img src="img/Hvide figure/2 til 4 gange om ugen hvid.png" style="position: relative; left: 1vw;">
+                    <img src="img/Baggrundsbilleder/2 til 4 gange om ugen.png" id="til4">
                 </div>
             </div>
             <div id="wrapper2">
@@ -94,155 +103,67 @@
                 </div>
             </div>
         </div>
-    <div id="lillepause"></div>
-    <div id="wrapper4" style="height: 1000px;">
-        <div id="stickybund" style="width: 550px; height: 700px top: 30vh;">
-            <iframe src="https://e.infogram.com/87ed8778-ca49-47f5-8f57-bda2dba2c0cb?src=embed" 
-            title="Unge mellem 12-17 år" width="550" height="686" scrolling="no" frameborder="0" 
-            style="border:none;" allowfullscreen="allowfullscreen"></iframe>
-        </div>
-    </div>
-    <div id="lillepause" style="height: 500px;"></div>
+    <div id="lillepause" style="height: 400px;"></div>
         <div id="container">
-            <div id="wrapper2">
-                <div id="sticky2">
+            <div id="wrapper2" style="z-index: 10;">
+                <div id="sticky2" style="margin-bottom: 10vh;">
                     <p> 
-                    Frederik Munck har altid været fodboldinteresseret og spillede første gang om penge i 7. 
-                    klasse. Sammen med sin far oddsede han fra tid til anden på kampene. 
-                    Senere fik han sin egen konto styret af forældrene, og i 9. 
-                    klasse fik han lov til selv at sætte penge ind.
+                        Frederik Munck spillede første gang om penge i 7. klasse. Sammen med sin 
+                        far oddsede han fra tid til anden på fodboldkampe. Senere fik han sin 
+                        egen konto styret af forældrene, og i 9. klasse fik han lov til selv at 
+                        sætte penge ind. 
                     </p>
                 </div>
             </div>
             <div id="wrapper">
                 <div id="sticky3">
-                    <img id="mobil_kasino" src="img/Baggrundsbilleder/Far og Søn.png">
+                    <img id="far" src="img/Baggrundsbilleder/Far og Søn.png">
+                    <img src="/img/Hvide figure/Far og Søn hvid.png" style="position: relative; right: 7vw; bottom: 12vh;">
                 </div>
             </div>
         </div>
-
-<div id="lillepause" style="height: 500px;"></div>
+<div id="lillepause" style="height: 150px;"></div>
     <div id="infogram-mennesker"><iframe src="https://e.infogram.com/21566641-8e1d-4ce7-a14c-eb2d4ae2534b?src=embed" title="Voksne med pengespil problemer" width="550" height="700" scrolling="no" frameborder="0" style="border:none;" allowfullscreen="allowfullscreen"></iframe></div>
             
-        <div id="pause" style="height: 500px;"></div>
-        <div id="container">
-            <div id="wrapper">
-                <div id="sticky">
-                    <img id="inspireret" src="img/Baggrundsbilleder/Inspireret af klasse kamerrater fixed.png">
-                </div>
-            </div>
-            <div id="wrapper2">
-                <div id="sticky2">
-                    <p> 
-                        - Der begyndte det så at tage lidt mere overhånd, indrømmer han.
-                        Mads Gräs byder ind. Det er samme historie. De var klassekammerater og i forlængelse af det spilkammerater. Frederik Panduro begyndte i 1.g inspireret af sine klassekammerater.
-                    </p>
-                </div>
-            </div>
-        </div>
-    <div id="pause" style="height: 500px;"></div>
-        <div id="container">
-            <div id="wrapper2">
-                <div id="sticky2">
-                    <p>
-                        - Vi hygger os jo med det. Det er det, der er så farligt. Keder vi os en aften, 
-                        kan vi altid hoppe ind og smide 100 kroner, fortæller Frederik Panduro, 
-                        og Mads Gräs tilføjer: 
-                    </p>
-                </div>
-            </div>
-            <div id="wrapper">
-                <div id="sticky">
-                    <img src="img/Baggrundsbilleder/Smider med penge 100kr.png">
-                </div>
-            </div>
-        </div>
-     <div id="lillepause"></div>
-        <div id="wrapper4">
-            <div id="stickybund">
-                <img src="img/Baggrundsbilleder/Taber penge hurtigt ligger nye ind.png">
-            </div>
-        </div>
-        <div id="wrapper3">
-            <div id="sticky2">
-                <p>
-                    <i>- Selv hvis du taber pengene hurtigt, tænker du, det kan fandeme ikke passe, 
-                        og så lægger du ind igen.</i>
-                </p>
-            </div>
-        </div>
 
-        <div id="pause" style="height: 500px;"></div>
-        <div id="container">
-            <div id="wrapper">
-                <div id="sticky">
-                    <img src="img/Baggrundsbilleder/Dopamin Lotto.png">
-                </div>
-            </div>
-            <div id="wrapper2">
-                <div id="sticky2">
-                    <p> 
-                        Det handler om dopaminen, chancen for at ramme lottoen, forklarer drengene. 
-                        Og selvom deres forældre ikke er meget for, at de spiller, gør de det alligevel, 
-                        siger Panduro:
-                        <br><br>
-                        <i>- Det er jo en stor del af hverdagen – især på ungdomsuddannelserne.</i>
-                </p>
-                </div>
-            </div>
-        </div>
-            <!--Måske et stort parallax billede til at bryde kapitlerne op
-            <overskrift class="parallax2" style="background-image: url(img/Henrik\ Thrane\ Brandt.jpg) !important;">
-                <div class="hero-text">
-                    <h1>Suveræne <br> danmarksmestre</h1>
-                </div>
-            
-            </overskrift>-->
-
-        <div id="lillepause"></div>
+        <div id="lillepause" style="height: 300px;"></div>
             <div id="wrapper4">
                 <div id="stickybund">
                     <img id="Henrik" src="img/Henrik Thrane Brandt.jpg">
                 </div>
             </div>
-            <p style="font-size: 12px; text-align: center;">Centerleder Henrik Brandt, Center for Ludomani.</p>
+            <p style="font-size: 20px; text-align: center; color: #f8f8f5;">Centerleder Henrik Brandt, Center for Ludomani.</p>
         <div style="background-color: #00603dc2;">
             <div id="wrapper3">
-                <div id="sticky2">
+                <div id="sticky2" style="border-radius: 10px 10px 0 0;">
                     <p style="font-size: 24px; line-height: 1rem;">
-                        Det bekymrer centerleder Henrik Brandt fra Center for Ludomani, 
-                        hvor antallet af klienter i alderen 12-17 år er steget fra 9 til 24 procent i 
-                        perioden 2009-2021. 
-                        
+                        Henrik Brandt mener, at en del forklaringen skal findes i 2012, hvor man fjernede den regel, der forbød reklamer for pengespil.
+                        <br><br>
                         Herunder ses hvilke selskaber der bruger
-                        flest penge på reklamer, læg mærke til alle de <i style="font-size: 24px;">grønne</i> reklamere for spil.
+                        flest penge på reklamer, læg mærke til alle de <span class="highlight" style="padding: 0px;">røde</span> reklamere for spil. </p>
                         <br>
-                        Han mener, at en del forklaringen skal findes i 2012, hvor man fjernede den regel, der forbød reklamer for pengespil.
-                        <br><br>
-                        Derefter udbrød der, som Henrik Brandt beskriver det, en markedsføringskrig, hvor ansvarligheden var den første til at falde.
-                        <br>
-                        <i style="font-size: 24px;">- Der er ikke nogle virksomheder i landet, der reklamerer mere for deres produkt end spiludbyderne. De er </i>
-                        <quote style="font-size: 24px;">suverænt danmarksmestre</quote>.
-                        <br><br>
-                        <i style="font-size: 24px;">- Synlighed og tilgængelighed er vigtige ting. Det er hele normaliseringen af spil som harmløs underholdning,
-                            som spilindustrien er lykkedes med rigtig flot. Man har jo sit kasino i baglommen og kan spille 24-7.
-                            Vi har slet ikke forstået alvoren i det her, </i>advarer centerlederen.
-                    </p>
-                </div>
+                    </div>
             </div>
+            <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/11845105" style="height: 570px; width: 575; overflow:hidden;">
+                <script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                <div id="sticky2" style="position: static; width: 40vw; border-radius: 0 0 10px 10px;">
+                        <br><br>
+                    <P style="font-size: 24px; line-height: 1rem;">
+                    <i style="font-size: 24px;">- Synlighed og tilgængelighed er vigtige ting. Det er hele normaliseringen af spil som harmløs underholdning,
+                        som spilindustrien er lykkedes med rigtig flot. Man har jo sit kasino i baglommen og kan spille 24-7.
+                        Vi har slet ikke forstået alvoren i det her, </i>advarer centerlederen.
+                </p></div>
         </div>
 
-        <div id="lillepause" style="height: 300px;"></div>
+        <div id="lillepause" style="height: 100px;"></div>
         <div id="wrapper4" style="height: auto; width: 50vw">
         <div id="infogram-mennesker">
-            <div class="flourish-embed flourish-bar-chart-race" style="width: 50vw;" data-src="visualisation/11845105">
-                <script src="https://public.flourish.studio/resources/embed.js"></script> <p>Herunder ses hvilke selskaber der bruger
-                     flest penge på reklamer, læg mærke til alle de <i>grønne</i> reklamere for spil.
-                </p></div>
+            <p> 
+            </p>
             </div>
         </div> 
 
-    <overskrift class="parallax" style="background-image: url(/img/gamblingOverskrift.jpg) !important; height: 120vh">
+    <overskrift class="parallax" style="background-image: url(/img/overskriftsbilleder/detmedsmall.png) !important; height: 120vh">
         <div class="hero-text">
             <h1>Det med småt</h1>
         </div>
@@ -251,7 +172,9 @@
     <div id="container">
         <div id="wrapper">
             <div id="sticky">
-                <img id = "Lokkemad" src="img/Baggrundsbilleder/Lokkemad.png">
+                <img id="fiske" src="img/Baggrundsbilleder/Lokkemad.png">
+                <img src="/img/Hvide figure/Lokkemad hvid.png" style="position: relative; height: 50vh; bottom: 50px; right:15vw;">
+                
             </div>
         </div>
         <div id="wrapper2">
@@ -265,7 +188,7 @@
     </div>
     <div id="pause" style="height: 500px;"></div>
     <div id="container">
-        <div id="wrapper2">
+        <div id="wrapper2" style="z-index: 1;">
             <div id="sticky2">
                 <p>
                     <i>- Alle, vi kender, bruger "Mr. Green", og jeg tror, vi blev fanget af velkomstbonussen, indrømmer Frederik Munck.
@@ -275,14 +198,16 @@
         </div>
         <div id="wrapper">
             <div id="sticky">
-                <img id = "blev" src="img/Baggrundsbilleder/Blev Fanget fixed.png">
+                <img id="fanget" src="img/Baggrundsbilleder/Blev Fanget fixed.png">
+                <img src="/img/Hvide figure/Blev Fanget fixed hvid.png" style="position: relative; height: 80vh; bottom: 50px; right:15vw;">
             </div>
         </div>
     </div>
  <div id="lillepause"></div>
     <div id="wrapper4">
         <div id="stickybund">
-            <img src="img/Baggrundsbilleder/Det med småt.png">
+            <img id="smaat" src="img/Baggrundsbilleder/Det med småt.png">
+            <img src="/img/Hvide figure/Det med småt hvid.png" style="position: relative; right:15vh;">
         </div>
     </div>
     <div id="wrapper3">
@@ -293,19 +218,19 @@
             </p>
         </div>
     </div>
-    <div id="lillepause"></div>
+    <div id="lillepause" style="height: 500px;"></div>
     <div id="container">
         <div id="wrapper">
             <div id="sticky">
-                <img class="pictureSize" src="img/Baggrundsbilleder/2kr bonus.png"> 
+                <img id="bonus" src="img/Baggrundsbilleder/2kr bonus.png"> 
+                <img src="/img/Hvide figure/2kr bonus hvid.png" style="position:relative; right:20vw;">
+
             </div>
         </div>
         <div id="wrapper2">
             <div id="sticky2">
                 <p> 
-                    De tre HHX'ere er enige: Man kan hurtigt tabe sine penge. Til gengæld kan man få bonusser på forskellige måder, 
-                    der øger udbyttet. En tokroners-bonus gør for eksempel 100 kroner til 200, og man kan få op til 
-                    5000 gange sine to kroner igen.
+                    De tre HHX'ere er enige: Man kan hurtigt tabe sine penge.
 
                     <br><br>
                     <i>
@@ -317,7 +242,7 @@
         </div>
     </div>
     <div id="lillepause"></div>
-    <overskrift class="parallax" style="background-image: url(/img/gamblingOverskrift.jpg) !important; height: 120vh">
+    <overskrift class="parallax" style="background-image: url(/img/overskriftsbilleder/husetvinder.png) !important; height: 120vh">
         <div class="hero-text">
             <h1>Huset vinder</h1>
         </div>
@@ -327,21 +252,22 @@
     <div id="container">
         <div id="wrapper">
             <div id="sticky">
-                <img id="indokonomi" src="img/Baggrundsbilleder/Det spiller ind drengenes økonomi.png">
+                <img src="/img/Hvide figure/Det spiller ind drengenes økonomi hvid.png" style="position: relative; height: 50vh; left: 15vw;">
+                <img id="okonomi" src="img/Baggrundsbilleder/Det spiller ind drengenes økonomi.png">
             </div>
         </div>
         <div id="wrapper2">
             <div id="sticky2">
                 <p> 
                     Det spiller ind i drengenes økonomi. De får 600-1000 kroner i SU. Ved siden af det har 
-                    Frederik Panduro og Gräs et studiejob på en café. Normalt lægger de 100 kroner hver i en pulje, de kan spille for.
+                    Frederik Panduro og Gräs et studiejob på en café. Normalt lægger de 100 kroner hver i en fælles pulje, de kan spille for.
                 </p>
             </div>
         </div>
     </div>
     <div id="pause" style="height: 500px;"></div>
     <div id="container">
-        <div id="wrapper2">
+        <div id="wrapper2" style="z-index: 10;">
             <div id="sticky2">
                 <p>
                     En weekend kunne Munck høste en gevinst på 4000 kroner, men det var også første gang det skete. Det højeste,
@@ -351,16 +277,22 @@
                 </p>
             </div>
         </div>
-        <div id="wrapper">
+        <div id="wrapper" style="z-index: 1;">
             <div id="sticky" style="margin-left: 15vw;">
-                <img id="Weekend" src="img/Baggrundsbilleder/En weekend 4000kr.png">
+                <img id="kr4000" src="img/Hvide figure/En weekend 4000kr sort forenklet.png">
+                <img src="/img/Hvide figure/En weekend 4000kr hvid.png" style="position:relative; right:25vw; bottom: 12vh;">
             </div>
         </div>
     </div>
  <div id="lillepause"></div>
+ <figure id="cardContainer">
+    <canvas id="scratch3" width="800" height="450"></canvas>
+    </figure>
+    <div id="lillepause"></div>
     <div id="wrapper4">
         <div id="stickybund">
-            <img src="img/Baggrundsbilleder/Man bliver ved.png">
+            <img id="bliverved" src="img/Baggrundsbilleder/Man bliver ved.png">
+            <img src="/img/Hvide figure/Man bliver ved hvid.png" style="position: relative; right:15vw;">
         </div>
     </div>
     <div id="wrapper3">
@@ -372,11 +304,12 @@
             </p>
         </div>
     </div>
-    <div id="lillepause"></div>
+    <div id="lillepause" style="height: 300px;"></div>
     <div id="container">
         <div id="wrapper">
             <div id="sticky">
-                <img id="gennemskue" src="img/Baggrundsbilleder/Svært at gennemskue hvor meget tabt.png">
+                <img id="megettabt" src="img/Baggrundsbilleder/Svært at gennemskue hvor meget tabt.png">
+                <img src="/img/Hvide figure/Svært at gennemskue hvor meget tabt hvid.png" style="position: relative; height: 50vh; bottom: 10vh; right: 17vw;">
             </div>
         </div>
         <div id="wrapper2">
@@ -392,7 +325,8 @@
     <div id="container">
         <div id="wrapper">
             <div id="sticky">
-                <img id="gruppeGrine" src="img/Baggrundsbilleder/Gruppe grine medstuderende fixed.png">
+                <img id="grine" src="img/Baggrundsbilleder/Gruppe grine medstuderende fixed.png">
+                <img src="/img/Hvide figure/Gruppe grine medstuderende fixed hvid.png" style="position: relative; right: 27vw; bottom: 5vh;">
             </div>
         </div>
         <div id="wrapper2">
@@ -400,32 +334,18 @@
                 <p> 
                     <i>- Alt i alt er vi alle sammen i minus</i>, konkluderer Mads Gräs, hvilket får de andre til at grine.
                     Det samme gør en gruppe medstuderende, der overhører samtalen.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div id="pause" style="height: 500px;"></div>
-    <div id="container">
-        <div id="wrapper2">
-            <div id="sticky2">
-                <p>
-                    <i>- Pensionerede gamblere</i>, siger en, da de hører Frederik, Frederik og Mads’ fortælling.
                     <br><br>
-                    Egentlig er de stoppet.
-                    
+                    - Egentlig er de stoppet.
+                
                 </p>
             </div>
         </div>
-        <div id="wrapper">
-            <div id="sticky">
-                <img id="pensonist" src="img/Baggrundsbilleder/Pensonist gamblere.png">
-            </div>
-        </div>
     </div>
- <div id="lillepause"></div>
+    <div id="pause" style="height: 300px;"></div>
     <div id="wrapper4">
         <div id="stickybund">
-            <img src="img/Baggrundsbilleder/Det med småt.png">
+            <img id="detmed" src="img/Baggrundsbilleder/Det med småt.png">
+            <img src="/img/Hvide figure/Det med småt hvid.png" style="position: relative; right: 5vw;">
         </div>
     </div>
     <div id="wrapper3">
@@ -438,9 +358,9 @@
         </div>
     </div>
     <div id="lillepause"></div>
-    <overskrift class="parallax" style="background-image: url(/img/gamblingOverskrift.jpg) !important; height: 120vh">
+    <overskrift class="parallax" style="background-image: url(/img/overskriftsbilleder/gameover.png) !important; height: 120vh">
         <div class="hero-text">
-            <h1>Spillet tager styringen</h1>
+            <h1>Spillet tager<br><br> styringen</h1>
         </div>
     </overskrift>
     
@@ -448,7 +368,8 @@
     <div id="container">
         <div id="wrapper">
             <div id="sticky">
-                <img id="Sandsynlighed" src="img/Baggrundsbilleder/Sandsynlighed for reelt spilproblem.png">
+                <img id="reelt" src="img/Baggrundsbilleder/Sandsynlighed for reelt spilproblem.png">
+                <img src="/img/Hvide figure/Sandsynlighed for reelt spilproblem hvid.png" style="position: relative; bottom: 10vh; right: 30vw;">
             </div>
         </div>
         <div id="wrapper2">
@@ -456,16 +377,18 @@
                 <p> 
                     Sandsynligheden for at udvikle et reelt spilleproblem stiger, jo tidligere man 
                     begynder at spille om penge, understreger Henrik Brandt.
-                    <br><br>
-                    Der er de ikke selv endnu, mener de.
                 </p>
             </div>
         </div>
     </div>
-    <div id="pause" style="height: 500px;"></div>
+    <div id="pause" style="height: 150px;"></div>
+    <figure id="cardContainer">
+        <canvas id="scratch2" width="800" height="450"></canvas>
+        </figure>
+        <div id="pause" style="height: 450px;"></div>
     <div id="container">
         <div id="wrapper2">
-            <div id="sticky2">
+            <div id="sticky2" style="z-index: 1;">
                 <p>
                     Det skyldes, at impulskontrollen hos unge ikke er færdigudviklet.
                 </p>
@@ -473,14 +396,16 @@
         </div>
         <div id="wrapper">
             <div id="sticky3">
-                <img class="pictureSize" src="img/Baggrundsbilleder/Impulse kontrol.png">
+                <img id="impuls" class="pictureSize" src="img/Baggrundsbilleder/Impulse kontrol.png" style="z-index: -1;">
+                <img class="pictureSize" src="/img/Hvide figure/Impulse kontrol hvid.png" style="position: relative; bottom:10vh; right: 10vw; height: 50vh;">
             </div>
         </div>
     </div>
- <div id="lillepause"></div>
+ <div id="lillepause" style="height: 300px;"></div>
     <div id="wrapper4">
         <div id="stickybund">
-            <img id="lange" src="img/Baggrundsbilleder/Fat i den lange ende.png">
+            <img id="ende" src="img/Baggrundsbilleder/Fat i den lange ende.png">
+            <img src="/img/Hvide figure/Fat i den lange ende hvid.png" style="position:relative; right:15vw;">
         </div>
     </div>
     <div id="wrapper3">
@@ -491,29 +416,10 @@
             </p>
         </div>
     </div>
-    <div id="lillepause"></div>
-    <div id="container">
-        <div id="wrapper">
-            <div id="sticky">
-                <img class="pictureSize" src="img/Baggrundsbilleder/14årig 1000kr fixed.png">
-            </div>
-        </div>
-        <div id="wrapper2">
-            <div id="sticky2">
-                <p> 
-                    <i>
-                        - Rigtig mange har prøvet at vinde en stor gevinst. En stor gevinst kan for en 14-årig være 1000 kroner. 
-                        Det sætter gang i et eller andet, forklarer han.
-                    </i>
-                    
-                </p>
-            </div>
-        </div>
-    </div>
-    <div id="pause" style="height: 500px;"></div>
+    <div id="pause" style="height: 300px;"></div>
     <div id="container">
         <div id="wrapper2">
-            <div id="sticky2">
+            <div id="sticky2" style="z-index: 2;">
                 <p>
                     Hos Center for Ludomani ser man ofte, at der går lang tid, fra man udvikler ludomani, til man søger behandling. 
                     Tit bliver det forklaret med, at man sagtens kan styre det, og da det foregår på en skærm, 
@@ -523,14 +429,16 @@
         </div>
         <div id="wrapper">
             <div id="sticky3" style="margin-left: 10vw;">
-                <img id="styrer" src="img/Baggrundsbilleder/Skal vi vædde (1).png">
+                <img id="vadde" src="img/Baggrundsbilleder/Skal vi vædde (1).png">
+                <img src="img/Hvide figure/Skal vi vædde hvid.png" style="position: relative; right: 20vw; bottom: 9vh;">
             </div>
         </div>
     </div>
- <div id="lillepause"></div>
+ <div id="lillepause" style="height: 300px;"></div>
     <div id="wrapper4">
         <div id="stickybund">
-            <img id="svartSkole" src="img/Baggrundsbilleder/Svært ved at følge med i skolen.png">
+            <img id="skolen" src="img/Baggrundsbilleder/Svært ved at følge med i skolen.png">
+            <img src="/img/Hvide figure/Svært ved at følge med i skolen hvid.png" style="position: relative; right: 20vw;">
         </div>
     </div>
     <div id="wrapper3">
@@ -544,7 +452,8 @@
             </p>
         </div>
     </div>
-    <overskrift class="parallax" style="background-image: url(/img/gamblingOverskrift.jpg) !important; height: 120vh">
+    <div id="lillepause" style="height: 200px;"></div>
+    <overskrift class="parallax" style="background-image: url(/img/overskriftsbilleder/aftale.png) !important; height: 120vh">
         <div class="hero-text">
             <h1>Aftalt at stoppe</h1>
         </div>
@@ -554,22 +463,24 @@
     <div id="container">
         <div id="wrapper">
             <div id="sticky">
-                <img class="pictureSize" src="img/Baggrundsbilleder/3 elever quitter gambling.png">
+                <img id="quitter" src="img/Baggrundsbilleder/3 elever quitter gambling.png">
+                <img src="/img/Hvide figure/3 elever quitter gambling hvid.png" style="position: relative; bottom: 10vh; right: 25vw;">
             </div>
         </div>
         <div id="wrapper2">
             <div id="sticky2">
                 <p> 
-                    På Nyborg Gymnasium er de tre handelsskoleelever blevet enige om at kvitte spillet.
-                    De er klar over, at de ikke skal spille for store beløb. De ved, det er dumt at spille.
+                    De tre handelsskoleelever blevet enige om at kvitte spillet. 
+                    De er klar over, at de ikke skal spille for store beløb. 
+                    De ved, det er dumt at spille. 
                 </p>
             </div>
         </div>
     </div>
-    <div id="pause" style="height: 500px;"></div>
+    <div id="pause" style="height: 300px;"></div>
     <div id="container">
         <div id="wrapper2">
-            <div id="sticky2">
+            <div id="sticky2" style="z-index: 2;">
                 <p>
                     <i>
                     - Men så hørte Mads og jeg, at en af vores venner havde vundet 2000 kroner, 
@@ -579,23 +490,28 @@
         </div>
         <div id="wrapper">
             <div id="sticky3">
-                <img id="SkalVijagte" src="img/Baggrundsbilleder/Skal vi jagte mønten.png" style="rotate: -40deg;">
+                <img id="jagte" src="img/Baggrundsbilleder/Skal vi jagte mønten.png">
+                <img src="/img/Hvide figure/Skal vi jagte mønten hvid.png" style="position:relative; bottom: 10vh; right: 15vw;">
             </div>
         </div>
     </div>
  <div id="lillepause"></div>
     <div id="wrapper4">
         <div id="stickybund">
-            <img id="Rofus" src="img/Baggrundsbilleder/Rofus.png">
+            <img id="rof" src="img/Baggrundsbilleder/Rofus.png">
+            <img src="/img/Hvide figure/Rofus hvid.png" style="position: relative; right: 39vw;">
         </div>
     </div>
     <div id="wrapper3">
         <div id="sticky2">
             <p>
                 Dagen forinden meldte en fra parallelklassen sig ind i ROFUS og udelukkede sig derved frivilligt fra spilsider.
+                <br><br>
+                - Der er drengene ikke selv endnu, mener de. 
             </p>
         </div>
     </div>
+    <div id="lillepause" style="height: 200px;"></div>
 
         <factbox class="ROFUS">
             <div>
@@ -612,11 +528,6 @@
                 </p>
             </div>
         </factbox>
-
-                <figure id="cardContainer">
-                    <figcaption>SKRAB OG VIND</figcaption>
-                    <canvas id="scratch" width="800" height="450"></canvas>
-                    </figure>
 
                 <p>
                     Der er de ikke selv endnu, mener de.
