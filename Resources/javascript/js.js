@@ -281,7 +281,7 @@ let processScroll = () => {
     }
 
     if(scrollscript > 21 && scrollscript < 22 ) {
-        document.getElementById('Henrik').style.setProperty('transform', 'scale(170%)');
+        document.getElementById('Henrik').style.setProperty('transform', 'scale(140%)');
 
     } else{
         document.getElementById('Henrik').style.setProperty('transform', 'scale(110%)');
@@ -398,7 +398,7 @@ let processScroll = () => {
         document.getElementById('jagte').style.setProperty('transform', 'scale(100%)');
     }
 
-    if(scrollscript > 91.5 && scrollscript < 93.5 ) {
+    if(scrollscript > 91.5 && scrollscript < 95.5 ) {
         document.getElementById('rof').style.setProperty('transform', 'scale(120%)');
 
     } else{
