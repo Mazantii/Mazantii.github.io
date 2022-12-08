@@ -291,8 +291,8 @@ wholepage > bund{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    background-color: #17532d;
-    height: 10vh;
+    background-color: #f50909;
+    height: 12vh;
 }
 bund > p{
     justify-content: center;
@@ -755,10 +755,11 @@ quote {
 }
 
 .highlight {
-    background: #f50909;
-    color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
+    text-shadow: 1px 1px #000000;
     padding: 2px;   
     border-radius: 3px;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+    font-style: italic;
 }
