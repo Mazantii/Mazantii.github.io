@@ -122,7 +122,7 @@ height: 200px;
     color: #000000;
     cursor: pointer;
     padding: 18px;
-    width: 30vw;
+    width: 800px;
     border: none;
     border-radius: 0px 0px 10px 10px;
     text-align: center;
@@ -145,7 +145,7 @@ height: 200px;
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: rgb(0, 0, 0);
-    float: right;
+    float: center;
     margin-left: 5px;
     }
 
@@ -156,7 +156,7 @@ height: 200px;
 .infoindhold{
     display: flex;
     max-height: 0px;
-    max-width: 30vw;
+    max-width: 800px;
     transition: max-height 0.2s ease-out;
     overflow: hidden;
     /*background-color: #e1d070;*/
@@ -167,7 +167,7 @@ height: 200px;
     box-shadow: 10px 10px;
 }
 .infoindhold > p{
-    max-width: 30vw;
+    max-width: 800px;
     align-items: center;
     left: 100px;
     color: #000000;
@@ -292,8 +292,8 @@ wholepage > bund{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    background-color: rgb(90, 156, 90);
-    height: 15vh;
+    background-color: #17532d;
+    height: 10vh;
 }
 bund > p{
     justify-content: center;
@@ -485,6 +485,7 @@ bund > p{
     z-index: -1;
     height: 60vh; 
     left: 10vw;
+    bottom: 5vh;
 }
 
 #quitter{
