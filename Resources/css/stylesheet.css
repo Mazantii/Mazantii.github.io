@@ -129,13 +129,13 @@ height: 200px;
     outline: none;
     font-size: 15px;
     margin-top: 0;
-    box-shadow: 10px 10px 0px;
+    box-shadow: 10px 10px;
 }
 
 .active{
     background-image: url(https://cdn.discordapp.com/attachments/916289339057651742/1050128260127789066/image.png);
     border-radius: 0px 0px 0px 0px;
-    box-shadow: 10px 0px 0px;
+    box-shadow: 10px 0px;
 }
 .infoboks:hover{
     color: #2c2c2c;
@@ -156,7 +156,7 @@ height: 200px;
 .infoindhold{
     display: flex;
     max-height: 0px;
-    max-width: 800px;
+    width: 800px;
     transition: max-height 0.2s ease-out;
     overflow: hidden;
     /*background-color: #e1d070;*/
@@ -167,10 +167,9 @@ height: 200px;
     box-shadow: 10px 10px;
 }
 .infoindhold > p{
-    max-width: 800px;
+    width: 800px;
     align-items: center;
     left: 100px;
-    color: #000000;
     /*text-shadow: 2px 2px #220303;*/
     z-index: 2;
     margin: 0px;
