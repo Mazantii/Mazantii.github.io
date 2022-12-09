@@ -76,11 +76,11 @@ overskrift > .hero-text {
     transform: translate(-50%, -50%);
 }
 
-
 h1 {
     font-size: 110px;
     margin: 40px 0;
     text-shadow: 4px 4px #220303;
+    line-height: 5vh;
 }
 
 h2 {
@@ -651,13 +651,6 @@ thead, tbody tr{
 }
 
 /*Dialog boksene*/
-.hidden2 {    
-    min-height: 10vh;
-    padding-inline-start: 5px;
-    padding-bottom: 2px;
-    line-height: 1.2;
-}
-
 .hidden1 {
     opacity: 1;
     filter: blur(5px);
@@ -679,12 +672,12 @@ thead, tbody tr{
 .show1 {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(40%);
+    transform: translateX(45%);
 }
 .show2 {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(-40%);
+    transform: translateX(-45%);
 }
 
 .parallax{
