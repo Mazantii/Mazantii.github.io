@@ -136,6 +136,7 @@ height: 200px;
     background-image: url(https://cdn.discordapp.com/attachments/916289339057651742/1050128260127789066/image.png);
     border-radius: 0px 0px 0px 0px;
     box-shadow: 10px 0px;
+    font-size: 15px;
 }
 .infoboks:hover{
     color: #2c2c2c;
@@ -147,11 +148,15 @@ height: 200px;
     color: rgb(0, 0, 0);
     float: center;
     margin-left: 5px;
-    }
+}
 
-    .active:after {
+.active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
-    }
+}
+
+.infoboks > b {
+    font-size: 40px;
+}
 
 .infoindhold{
     display: flex;
@@ -166,6 +171,7 @@ height: 200px;
     border-radius: 0px 0px 10px 10px;
     box-shadow: 10px 10px;
 }
+
 .infoindhold > p{
     width: 800px;
     align-items: center;
@@ -174,7 +180,6 @@ height: 200px;
     z-index: 2;
     margin: 0px;
     padding: 0px 10px 10px 10px;
-
 }
 
 #wrapper {
@@ -183,15 +188,11 @@ height: 900px;
 
 display: flex;
 justify-content: center;
-/*border: solid;*/
-
 }
 
 #wrapper2{
 width: 40vw;
 height: 600px;
-/*border: solid;*/
-
 }
 
 
@@ -200,8 +201,6 @@ width: 40vw;
 
 margin: auto;
 height: auto;
-/*border: solid;*/
-
 }
 
 #wrapper4 {
@@ -212,7 +211,6 @@ height: 500px;
     
 display: flex;
 justify-content: center;
-/*border: solid;*/
 }
 
 #sticky {
@@ -228,7 +226,6 @@ margin-bottom: 5vh;
 display: flex;
 justify-content: center;
 align-items: center;
-/*border: solid;*/
 }
 
 #sticky3 {
@@ -244,7 +241,7 @@ align-items: center;
     align-items: center;
     }
 
-  #sticky2 {
+#sticky2 {
     position: sticky;
     
     top: 40vh;
@@ -292,12 +289,13 @@ wholepage > bund{
     align-items: flex-end;
     justify-content: center;
     background-color: #f50909;
-    height: 12vh;
+    height: auto;
 }
 bund > p{
     justify-content: center;
     width: auto;
     color: whitesmoke;
+    
 }
 
 /*Animationer*/
@@ -512,9 +510,6 @@ bund > p{
     height: 40vh; 
     left: 30vw;
 }
-
-
-
 
 /*skrabelod*/
 #scratch {
