@@ -76,11 +76,11 @@ overskrift > .hero-text {
     transform: translate(-50%, -50%);
 }
 
-
 h1 {
     font-size: 110px;
     margin: 40px 0;
     text-shadow: 4px 4px #220303;
+    line-height: 5vh;
 }
 
 h2 {
