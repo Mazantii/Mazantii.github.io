@@ -37,6 +37,7 @@ button{
 button:hover{
     background-color: #000000;
     color: white;
+    cursor: pointer;
 }
 
 wholepage {
@@ -75,11 +76,11 @@ overskrift > .hero-text {
     transform: translate(-50%, -50%);
 }
 
-
 h1 {
     font-size: 110px;
     margin: 40px 0;
     text-shadow: 4px 4px #220303;
+    line-height: 5vh;
 }
 
 h2 {
@@ -114,6 +115,72 @@ height: 200px;
 /*border: solid;*/
 }
 
+.infoboks{
+    left: 0vw;
+    position: relative;
+    background-image: url(https://cdn.discordapp.com/attachments/916289339057651742/1050128260127789066/image.png);
+    color: #000000;
+    cursor: pointer;
+    padding: 18px;
+    width: 800px;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    margin-top: 0;
+    box-shadow: 10px 10px;
+}
+
+.active{
+    background-image: url(https://cdn.discordapp.com/attachments/916289339057651742/1050128260127789066/image.png);
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 10px 0px;
+    font-size: 15px;
+}
+.infoboks:hover{
+    color: #2c2c2c;
+}
+
+.infoboks:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    float: center;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.infoboks > b {
+    font-size: 40px;
+}
+
+.infoindhold{
+    display: flex;
+    max-height: 0px;
+    width: 800px;
+    transition: max-height 0.2s ease-out;
+    overflow: hidden;
+    /*background-color: #e1d070;*/
+    background-image: url(https://cdn.discordapp.com/attachments/916289339057651742/1050128260127789066/image.png);
+    text-align: center;
+    font-size: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 10px 10px;
+}
+
+.infoindhold > p{
+    width: 800px;
+    align-items: center;
+    left: 100px;
+    /*text-shadow: 2px 2px #220303;*/
+    z-index: 2;
+    margin: 0px;
+    padding: 0px 10px 10px 10px;
+}
 
 #wrapper {
 width: 20vw;
@@ -121,15 +188,11 @@ height: 900px;
 
 display: flex;
 justify-content: center;
-/*border: solid;*/
-
 }
 
 #wrapper2{
 width: 40vw;
 height: 600px;
-/*border: solid;*/
-
 }
 
 
@@ -138,8 +201,6 @@ width: 40vw;
 
 margin: auto;
 height: auto;
-/*border: solid;*/
-
 }
 
 #wrapper4 {
@@ -150,7 +211,6 @@ height: 500px;
     
 display: flex;
 justify-content: center;
-/*border: solid;*/
 }
 
 #sticky {
@@ -166,7 +226,6 @@ margin-bottom: 5vh;
 display: flex;
 justify-content: center;
 align-items: center;
-/*border: solid;*/
 }
 
 #sticky3 {
@@ -182,7 +241,7 @@ align-items: center;
     align-items: center;
     }
 
-  #sticky2 {
+#sticky2 {
     position: sticky;
     
     top: 40vh;
@@ -229,13 +288,14 @@ wholepage > bund{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    background-color: rgb(90, 156, 90);
-    height: 15vh;
+    background-color: #f50909;
+    height: auto;
 }
 bund > p{
     justify-content: center;
     width: auto;
     color: whitesmoke;
+    
 }
 
 /*Animationer*/
@@ -422,6 +482,7 @@ bund > p{
     z-index: -1;
     height: 60vh; 
     left: 10vw;
+    bottom: 5vh;
 }
 
 #quitter{
@@ -450,9 +511,6 @@ bund > p{
     left: 30vw;
 }
 
-
-
-
 /*skrabelod*/
 #scratch {
 	display: flex;
@@ -461,6 +519,7 @@ bund > p{
 	background-size: contain;
     cursor: crosshair;
     cursor: url('http://jennamolby.com/scratch-and-win/images/coin1.png') 15 15, crosshair;
+    box-shadow: 10px 10px;
 }
 #scratch2 {
 	display: flex;
@@ -469,6 +528,7 @@ bund > p{
 	background-size: contain;
     cursor: crosshair;
     cursor: url('http://jennamolby.com/scratch-and-win/images/coin1.png') 15 15, crosshair;
+    box-shadow: 10px 10px;
 }
 
 #scratch3 {
@@ -478,14 +538,12 @@ bund > p{
 	background-size: contain;
     cursor: crosshair;
     cursor: url('http://jennamolby.com/scratch-and-win/images/coin1.png') 15 15, crosshair;
+    box-shadow: 10px 10px;
 }
 #cardContainer { 
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-size: xx-large;
-}
-#cardContainer figcaption {   
-  margin-top: 2rem; 
 }
 
 /*ID'S*/
@@ -593,13 +651,6 @@ thead, tbody tr{
 }
 
 /*Dialog boksene*/
-.hidden2 {    
-    min-height: 10vh;
-    padding-inline-start: 5px;
-    padding-bottom: 2px;
-    line-height: 1.2;
-}
-
 .hidden1 {
     opacity: 1;
     filter: blur(5px);
@@ -621,12 +672,12 @@ thead, tbody tr{
 .show1 {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(40%);
+    transform: translateX(45%);
 }
 .show2 {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(-40%);
+    transform: translateX(-45%);
 }
 
 .parallax{
@@ -692,10 +743,11 @@ quote {
 }
 
 .highlight {
-    background: #f50909;
-    color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
+    text-shadow: 1px 1px #000000;
     padding: 2px;   
     border-radius: 3px;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+    font-style: italic;
 }

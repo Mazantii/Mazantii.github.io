@@ -1,3 +1,24 @@
+//skrabelod infoboks
+var coll = document.getElementsByClassName("infoboks");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+    if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+  });
+} 
+
 //skrabelod 1
 var card = document.getElementById("scratch"),
     cardCanvas = card.getContext('2d'),
@@ -217,21 +238,14 @@ let processScroll = () => {
     console.log(scrollscript);
 
     //Her fikser vi animationer
-    if(scrollscript > 1.4 && scrollscript < 3.2 ) {
+    if(scrollscript > 1.4 && scrollscript < 4.2 ) {
         document.getElementById('mont').style.setProperty('transform', 'scale(200%)');
 
     } else{
         document.getElementById('mont').style.setProperty('transform', 'scale(150%)');
     }
 
-    if(scrollscript > 4.5 && scrollscript < 5.5 ) {
-        document.getElementById('scratch').style.setProperty('transform', 'scale(120%)');
-
-    } else{
-        document.getElementById('scratch').style.setProperty('transform', 'scale(100%)');
-    }
-
-    if(scrollscript > 5.6 && scrollscript < 9.2 ) {
+    if(scrollscript > 6.6 && scrollscript < 10 ) {
         document.getElementById('mobil').style.setProperty('transform', 'scale(100%)');
 
     } else{
@@ -245,53 +259,150 @@ let processScroll = () => {
         document.getElementById('kantine').style.setProperty('transform', 'scale(150%)');
     }
 
-    if(scrollscript > 12.2 && scrollscript < 15.3 ) {
+    if(scrollscript > 13 && scrollscript < 15.3 ) {
         document.getElementById('til4').style.setProperty('transform', 'scale(300%)');
 
     } else{
         document.getElementById('til4').style.setProperty('transform', 'scale(200%)');
     }
 
-    if(scrollscript > 15.8 && scrollscript < 19 ) {
+    if(scrollscript > 16 && scrollscript < 19.5 ) {
         document.getElementById('far').style.setProperty('transform', 'scale(200%)');
 
     } else{
         document.getElementById('far').style.setProperty('transform', 'scale(150%)');
     }
 
-    if(scrollscript > 19.3 && scrollscript < 21 ) {
+    if(scrollscript > 19.5 && scrollscript < 21 ) {
         document.getElementById('infogram-mennesker').style.setProperty('transform', 'scale(120%)');
 
     } else{
         document.getElementById('infogram-mennesker').style.setProperty('transform', 'scale(100%)');
     }
 
-    if(scrollscript > 21.3 && scrollscript < 22.6 ) {
-        document.getElementById('Henrik').style.setProperty('transform', 'scale(170%)');
+    if(scrollscript > 21 && scrollscript < 22 ) {
+        document.getElementById('Henrik').style.setProperty('transform', 'scale(140%)');
 
     } else{
         document.getElementById('Henrik').style.setProperty('transform', 'scale(110%)');
     }
 
-    if(scrollscript > 28.8 && scrollscript < 31 ) {
+    if(scrollscript > 28 && scrollscript < 31 ) {
         document.getElementById('fiske').style.setProperty('transform', 'scale(150%)');
 
     } else{
         document.getElementById('fiske').style.setProperty('transform', 'scale(100%)');
     }
 
-    if(scrollscript > 32 && scrollscript < 34.3 ) {
+    if(scrollscript > 31.5 && scrollscript < 35 ) {
         document.getElementById('fanget').style.setProperty('transform', 'scale(150%)');
 
     } else{
         document.getElementById('fanget').style.setProperty('transform', 'scale(100%)');
     }
 
-    if(scrollscript > 32 && scrollscript < 34.3 ) {
-        document.getElementById('smaat').style.setProperty('transform', 'scale(150%)');
+    if(scrollscript > 35.5 && scrollscript < 37 ) {
+        document.getElementById('smaat').style.setProperty('transform', 'scale(120%)');
 
     } else{
         document.getElementById('smaat').style.setProperty('transform', 'scale(100%)');
+    }
+
+    if(scrollscript > 37.5 && scrollscript < 40.5 ) {
+        document.getElementById('bonus').style.setProperty('transform', 'scale(120%)');
+
+    } else{
+        document.getElementById('bonus').style.setProperty('transform', 'scale(100%)');
+    }
+
+    if(scrollscript > 44.5 && scrollscript < 47 ) {
+        document.getElementById('okonomi').style.setProperty('transform', 'scale(120%)');
+
+    } else{
+        document.getElementById('okonomi').style.setProperty('transform', 'scale(100%)');
+    }
+    if(scrollscript > 47.5 && scrollscript < 51 ) {
+        document.getElementById('kr4000').style.setProperty('transform', 'scale(120%)');
+
+    } else{
+        document.getElementById('kr4000').style.setProperty('transform', 'scale(100%)');
+    }
+
+    if(scrollscript > 53 && scrollscript < 55.5 ) {
+        document.getElementById('bliverved').style.setProperty('transform', 'scale(120%)');
+
+    } else{
+        document.getElementById('bliverved').style.setProperty('transform', 'scale(100%)');
+    }
+
+    if(scrollscript > 56 && scrollscript < 59 ) {
+        document.getElementById('megettabt').style.setProperty('transform', 'scale(120%)');
+
+    } else{
+        document.getElementById('megettabt').style.setProperty('transform', 'scale(100%)');
+    }
+
+    if(scrollscript > 59.5 && scrollscript < 62 ) {
+        document.getElementById('grine').style.setProperty('transform', 'scale(120%)');
+
+    } else{
+        document.getElementById('grine').style.setProperty('transform', 'scale(100%)');
+    }
+
+    if(scrollscript > 66 && scrollscript < 69 ) {
+        document.getElementById('reelt').style.setProperty('transform', 'scale(120%)');
+
+    } else{
+        document.getElementById('reelt').style.setProperty('transform', 'scale(100%)');
+    }
+
+    if(scrollscript > 70.5 && scrollscript < 73.5 ) {
+        document.getElementById('impuls').style.setProperty('transform', 'scale(120%)');
+
+    } else{
+        document.getElementById('impuls').style.setProperty('transform', 'scale(100%)');
+    }
+
+    if(scrollscript > 74 && scrollscript < 76 ) {
+        document.getElementById('ende').style.setProperty('transform', 'scale(120%)');
+
+    } else{
+        document.getElementById('ende').style.setProperty('transform', 'scale(100%)');
+    }
+
+    if(scrollscript > 76.5 && scrollscript < 79 ) {
+        document.getElementById('vadde').style.setProperty('transform', 'scale(120%)');
+
+    } else{
+        document.getElementById('vadde').style.setProperty('transform', 'scale(100%)');
+    }
+
+    if(scrollscript > 79.5 && scrollscript < 82 ) {
+        document.getElementById('skolen').style.setProperty('transform', 'scale(120%)');
+
+    } else{
+        document.getElementById('skolen').style.setProperty('transform', 'scale(100%)');
+    }
+
+    if(scrollscript > 86 && scrollscript < 88.3 ) {
+        document.getElementById('quitter').style.setProperty('transform', 'scale(120%)');
+
+    } else{
+        document.getElementById('quitter').style.setProperty('transform', 'scale(100%)');
+    }
+
+    if(scrollscript > 88.8 && scrollscript < 91 ) {
+        document.getElementById('jagte').style.setProperty('transform', 'scale(120%)');
+
+    } else{
+        document.getElementById('jagte').style.setProperty('transform', 'scale(100%)');
+    }
+
+    if(scrollscript > 91.5 && scrollscript < 95.5 ) {
+        document.getElementById('rof').style.setProperty('transform', 'scale(120%)');
+
+    } else{
+        document.getElementById('rof').style.setProperty('transform', 'scale(100%)');
     }
 }
 
