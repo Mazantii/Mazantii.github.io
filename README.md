@@ -1,4 +1,8 @@
 # Mazantii.github.io
 3. Semesterprojekt
 
-do the thing
+OBS OBS OBS !!!!!!
+
+åben webdok github pages: mazantii.github.io
+
+:)
